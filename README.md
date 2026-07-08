@@ -1,5 +1,9 @@
 # Sample-Aware Reanalysis of Lung Adenocarcinoma Tumor Microenvironment scRNA-seq
 
+[![checks](https://github.com/nsrilaxmi/GSE131907_luad_tme_reanalysis/actions/workflows/checks.yml/badge.svg)](https://github.com/nsrilaxmi/GSE131907_luad_tme_reanalysis/actions/workflows/checks.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GEO: GSE131907](https://img.shields.io/badge/GEO-GSE131907-blue.svg)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907)
+
 This repository contains a reproducible reanalysis workflow for GEO dataset `GSE131907`, a human lung adenocarcinoma single-cell RNA-seq atlas containing 208,506 cells from 58 samples across normal lung, primary tumors, lymph nodes, metastatic sites, and malignant pleural effusions.
 
 Unlike a direct reproduction of the original atlas, this project is framed as a compact, sample-aware tumor microenvironment analysis:
@@ -8,6 +12,7 @@ Unlike a direct reproduction of the original atlas, this project is framed as a 
 - immune exhaustion and cytotoxicity programs
 - myeloid inflammatory and macrophage-like programs
 - epithelial malignancy, EMT, hypoxia, proliferation, and stress signatures
+- subtype-aware TME summaries using the original `Cell_subtype` labels
 - optional benchmarking hooks for annotation/scoring methods
 
 ## Biological Question
@@ -27,6 +32,7 @@ The original study already describes a detailed LUAD single-cell atlas. This rep
 - standardized metadata extraction from GEO cell annotations
 - sample/tissue-site-level composition summaries
 - clinically interpretable TME signatures
+- subtype-level summaries for T-cell, myeloid, and epithelial programs
 - broad malignant/immune/stromal compartment summaries
 - reproducible scripts suitable for a GitHub portfolio
 - explicit limitations around reuse of processed public data
@@ -98,33 +104,52 @@ python3 scripts/00_download_geo.py --raw-only
 bash scripts/run_all.sh --with-expression
 ```
 
+Validate committed output files:
+
+```bash
+python3 scripts/08_validate_outputs.py
+```
+
 The raw UMI matrix is large but feasible to stream. The workflow avoids loading the full expression matrix into memory: it computes per-cell library sizes, extracts only selected tumor microenvironment signature genes, and summarizes scores at sample/cell-type/tissue-site level. The normalized log2TPM matrix is much larger and is not required for this workflow.
 
-## Planned Outputs
+## Current Outputs
 
 ```text
 docs/figures/
 ├── sample_counts_by_tissue.png
-├── celltype_composition_by_tissue.png
+├── celltype_composition_by_sample.png
 ├── top_celltypes_by_site.png
 ├── tcell_signature_scores_by_site.png
 ├── myeloid_signature_scores_by_site.png
 ├── epithelial_signature_scores_by_site.png
-└── tme_signature_heatmap_by_site_celltype.png
+├── tme_signature_heatmap_by_site_celltype.png
+├── signature_contrast_effect_sizes.png
+├── paired_patient_signature_deltas.png
+├── top_subtypes_by_tissue.png
+├── tcell_subtype_signature_heatmap.png
+├── myeloid_subtype_signature_heatmap.png
+└── epithelial_subtype_signature_heatmap.png
 
 docs/tables/
-├── sample_metadata_clean.csv
 ├── cell_counts_by_sample.csv
 ├── celltype_composition_by_sample.csv
 ├── tissue_site_summary.csv
+├── planned_tme_signatures.csv
 ├── signature_genes_found.csv
 ├── signature_scores_by_sample_celltype.csv
-└── signature_scores_by_tissue_celltype.csv
+├── signature_scores_by_tissue_celltype.csv
+├── key_results_summary.csv
+├── signature_site_contrasts.csv
+├── paired_patient_signature_contrasts.csv
+├── subtype_composition_by_sample.csv
+├── subtype_composition_by_tissue.csv
+├── signature_scores_by_sample_subtype.csv
+└── signature_scores_by_tissue_subtype.csv
 ```
 
 ## Results Preview
 
-The first public version includes lightweight annotation-derived preview outputs in `docs/`.
+The public preview outputs in `docs/` include composition summaries, expression-based signature scores, subtype summaries, and paired-patient sensitivity checks.
 
 ### Sample Counts
 
@@ -138,7 +163,13 @@ The first public version includes lightweight annotation-derived preview outputs
 
 Preview tables are available in `docs/tables/`, including sample-level cell counts, sample-level composition, tissue-site summaries, and planned tumor microenvironment signature definitions.
 
-See [results_summary.md](docs/results_summary.md) for a concise interpretation of the current composition and signature-scoring outputs.
+See [project_brief.md](docs/project_brief.md) for a short portfolio-style summary, [methods_overview.md](docs/methods_overview.md) for the workflow, [results_summary.md](docs/results_summary.md) for interpretation, and [output_guide.md](docs/output_guide.md) for a file-by-file guide to the committed figures and tables.
+
+For a compact machine-readable summary of headline findings, see [key_results_summary.csv](docs/tables/key_results_summary.csv).
+
+For interactive inspection, see [notebooks/01_dataset_overview.ipynb](notebooks/01_dataset_overview.ipynb). A Quarto-style report scaffold is available at [reports/08_final_report.qmd](reports/08_final_report.qmd).
+
+For release notes and handoff, see [CHANGELOG.md](CHANGELOG.md) and [commit_checklist.md](docs/commit_checklist.md).
 
 ### Expression-Based TME Signatures
 
@@ -151,6 +182,30 @@ The upgraded workflow streams the raw UMI matrix and scores selected signatures 
 ![Epithelial signature scores by tissue site](docs/figures/epithelial_signature_scores_by_site.png)
 
 ![Mean TME signature heatmap by site and cell type](docs/figures/tme_signature_heatmap_by_site_celltype.png)
+
+### Sample-Level Signature Contrasts
+
+The workflow includes sample-level Mann-Whitney tests and Benjamini-Hochberg FDR correction for selected tissue-site contrasts within relevant cell compartments.
+
+![Top sample-level TME signature differences](docs/figures/signature_contrast_effect_sizes.png)
+
+### Paired-Patient Sensitivity Checks
+
+Where the same patient contributes multiple tissue contexts, the workflow also calculates within-patient signature differences. These paired contrasts are smaller and exploratory, but they help distinguish broad tissue-site patterns from purely between-patient comparisons.
+
+![Paired patient TME signature contrasts](docs/figures/paired_patient_signature_deltas.png)
+
+### Cell-Subtype TME Patterns
+
+The subtype layer uses the original `Cell_subtype` annotations to summarize composition and signature scores for more specific immune and epithelial populations.
+
+![Most abundant cell subtypes by tissue site](docs/figures/top_subtypes_by_tissue.png)
+
+![T-cell subtype signature scores](docs/figures/tcell_subtype_signature_heatmap.png)
+
+![Myeloid subtype signature scores](docs/figures/myeloid_subtype_signature_heatmap.png)
+
+![Epithelial subtype signature scores](docs/figures/epithelial_subtype_signature_heatmap.png)
 
 ## Analysis Strategy
 
@@ -167,6 +222,12 @@ For the expression-driven workflow, `scripts/04_signature_scoring.py` performs a
 5. summarize scores by `sample x tissue_site x cell_type`
 
 The first-pass signature sets include T-cell exhaustion, cytotoxicity, myeloid inflammation, macrophage-like activity, EMT/invasion, hypoxia, and proliferation.
+
+`scripts/05_signature_statistics.py` adds a sample-level statistical layer for selected biologically interpretable contrasts, reporting group means, mean differences, Cohen's d, Mann-Whitney U p-values, and Benjamini-Hochberg adjusted p-values.
+
+`scripts/06_subtype_analysis.py` adds subtype-level composition and signature summaries from the GEO `Cell_subtype` labels. It filters sample-subtype summaries before tissue-level averaging to reduce instability from very small cell groups.
+
+`scripts/07_paired_patient_analysis.py` adds a paired-patient sensitivity layer for tissue contrasts where the same patient contributes both the reference and contrast tissue contexts.
 
 ## Limitations
 

@@ -1,0 +1,15 @@
+cell_type_clean,signature,contrast,contrast_site,reference_site,n_paired_patients,mean_paired_delta,median_paired_delta,wilcoxon_statistic,pvalue,paired_patient_ids,padj_bh
+Epithelial cells,HYPOXIA,primary_tumor_vs_normal_lung,primary_tumor,normal_lung,10,0.25584574000000004,0.20140144000000001,0.0,0.001953125,6;8;9;18;19;20;28;30;31;34,0.02734375
+Epithelial cells,EMT_INVASION,primary_tumor_vs_normal_lung,primary_tumor,normal_lung,10,0.0525082775,0.0080684975,17.0,0.322265625,6;8;9;18;19;20;28;30;31;34,0.41015625
+Epithelial cells,PROLIFERATION,primary_tumor_vs_normal_lung,primary_tumor,normal_lung,10,0.054789145,0.004434256999999997,17.0,0.322265625,6;8;9;18;19;20;28;30;31;34,0.41015625
+Epithelial cells,HYPOXIA,advanced_airway_tumor_vs_normal_lung,advanced_airway_tumor,normal_lung,3,0.3075071566666667,0.31532997000000007,0.0,0.25,6;19;28,0.38888888888888884
+Epithelial cells,PROLIFERATION,advanced_airway_tumor_vs_normal_lung,advanced_airway_tumor,normal_lung,3,0.22607355000000004,0.10044925,0.0,0.25,6;19;28,0.38888888888888884
+Myeloid cells,MACROPHAGE_LIKE,advanced_airway_tumor_vs_normal_lymph_node,advanced_airway_tumor,normal_lymph_node,3,0.5511655233333334,0.6388028699999999,0.0,0.25,6;11;12,0.38888888888888884
+Myeloid cells,MYELOID_INFLAMMATION,advanced_airway_tumor_vs_normal_lymph_node,advanced_airway_tumor,normal_lymph_node,3,1.2834092666666665,1.2940516999999998,0.0,0.25,6;11;12,0.38888888888888884
+Myeloid cells,MYELOID_INFLAMMATION,pleural_effusion_vs_normal_lymph_node,pleural_effusion,normal_lymph_node,3,0.9770536333333334,0.9824547,0.0,0.25,6;11;12,0.38888888888888884
+T lymphocytes,CYTOTOXICITY,advanced_airway_tumor_vs_normal_lymph_node,advanced_airway_tumor,normal_lymph_node,3,0.4948190353333333,0.63123885,0.0,0.25,6;11;12,0.38888888888888884
+T lymphocytes,CYTOTOXICITY,pleural_effusion_vs_normal_lymph_node,pleural_effusion,normal_lymph_node,3,0.32151241533333336,0.40004191600000005,0.0,0.25,6;11;12,0.38888888888888884
+T lymphocytes,T_CELL_EXHAUSTION,advanced_airway_tumor_vs_normal_lymph_node,advanced_airway_tumor,normal_lymph_node,3,0.099482548,0.02950670400000001,0.0,0.25,6;11;12,0.38888888888888884
+Epithelial cells,EMT_INVASION,advanced_airway_tumor_vs_normal_lung,advanced_airway_tumor,normal_lung,3,0.06755646333333333,0.0037702899999999956,2.0,0.75,6;19;28,0.8076923076923077
+T lymphocytes,T_CELL_EXHAUSTION,pleural_effusion_vs_normal_lymph_node,pleural_effusion,normal_lymph_node,3,-0.023374721999999997,-0.020603709999999997,2.0,0.75,6;11;12,0.8076923076923077
+Myeloid cells,MACROPHAGE_LIKE,pleural_effusion_vs_normal_lymph_node,pleural_effusion,normal_lymph_node,3,0.10340869333333332,-0.16058192999999998,3.0,1.0,6;11;12,1.0

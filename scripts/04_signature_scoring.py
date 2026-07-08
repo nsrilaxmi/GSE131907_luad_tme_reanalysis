@@ -111,7 +111,16 @@ def save_plots(sample_scores: pd.DataFrame) -> None:
         )
         plt.figure(figsize=(10, 5))
         sns.boxplot(data=long_df, x="tissue_site", y="score", hue="signature", showfliers=False)
-        sns.stripplot(data=long_df, x="tissue_site", y="score", hue="signature", dodge=True, color="black", alpha=0.5, size=2)
+        sns.stripplot(
+            data=long_df,
+            x="tissue_site",
+            y="score",
+            hue="signature",
+            dodge=True,
+            palette={signature: "black" for signature in signatures},
+            alpha=0.5,
+            size=2,
+        )
         plt.xticks(rotation=35, ha="right")
         plt.title(title)
         plt.xlabel("")

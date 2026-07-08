@@ -23,4 +23,8 @@ fi
 
 if [[ "${1:-}" == "--with-expression" ]]; then
   "$PYTHON_BIN" scripts/04_signature_scoring.py
+  "$PYTHON_BIN" scripts/05_signature_statistics.py
+  "$PYTHON_BIN" scripts/06_subtype_analysis.py
+  "$PYTHON_BIN" scripts/07_paired_patient_analysis.py
+  "$PYTHON_BIN" scripts/09_key_results_summary.py
 fi

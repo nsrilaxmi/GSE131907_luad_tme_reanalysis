@@ -27,7 +27,15 @@ def show_png(path, caption):
 
 ## Overview
 
-This report summarizes a sample-aware reanalysis scaffold for `GSE131907`, focused on lung adenocarcinoma tumor microenvironment composition across tissue sites.
+This report summarizes a sample-aware reanalysis of `GSE131907`, focused on lung adenocarcinoma tumor microenvironment composition and expression programs across tissue sites.
+
+The workflow is intentionally different from a direct reproduction of the original atlas. It emphasizes:
+
+- sample- and tissue-site-level composition summaries
+- curated tumor microenvironment signature scoring from the raw UMI matrix
+- sample-level contrast testing with effect sizes and FDR correction
+- subtype-aware summaries using the original `Cell_subtype` labels
+- paired-patient sensitivity checks where matched tissue contexts are available
 
 ## Sample Metadata
 
@@ -47,17 +55,69 @@ show_png("celltype_composition_by_sample.png", "Cell type composition by sample"
 show_png("top_celltypes_by_site.png", "Top cell types by tissue site")
 ```
 
-## Planned TME Signatures
+## TME Signatures
 
 ```{python}
-path = docs / "tables" / "planned_tme_signatures.csv"
+path = docs / "tables" / "signature_genes_found.csv"
 if path.exists():
     display(pd.read_csv(path))
 else:
-    display(Markdown("*Run `scripts/03_signature_plan.py` to populate signature definitions.*"))
+    display(Markdown("*Run `bash scripts/run_all.sh --with-expression` to populate signature outputs.*"))
+```
+
+```{python}
+show_png("tcell_signature_scores_by_site.png", "T-cell signature scores by tissue site")
+show_png("myeloid_signature_scores_by_site.png", "Myeloid signature scores by tissue site")
+show_png("epithelial_signature_scores_by_site.png", "Epithelial signature scores by tissue site")
+show_png("tme_signature_heatmap_by_site_celltype.png", "TME signature heatmap")
+```
+
+## Sample-Level Contrasts
+
+```{python}
+path = docs / "tables" / "signature_site_contrasts.csv"
+if path.exists():
+    cols = ["cell_type_clean", "signature", "contrast", "n_contrast_samples", "n_reference_samples", "delta_mean", "padj_bh"]
+    display(pd.read_csv(path)[cols].head(12))
+else:
+    display(Markdown("*Run `scripts/05_signature_statistics.py` to populate contrast summaries.*"))
+```
+
+```{python}
+show_png("signature_contrast_effect_sizes.png", "Sample-level TME signature differences")
+```
+
+## Cell-Subtype Summaries
+
+```{python}
+path = docs / "tables" / "signature_scores_by_tissue_subtype.csv"
+if path.exists():
+    display(pd.read_csv(path).head(15))
+else:
+    display(Markdown("*Run `scripts/06_subtype_analysis.py` to populate subtype summaries.*"))
+```
+
+```{python}
+show_png("top_subtypes_by_tissue.png", "Most abundant cell subtypes by tissue site")
+show_png("tcell_subtype_signature_heatmap.png", "T-cell subtype signature scores")
+show_png("myeloid_subtype_signature_heatmap.png", "Myeloid subtype signature scores")
+show_png("epithelial_subtype_signature_heatmap.png", "Epithelial subtype signature scores")
+```
+
+## Paired-Patient Sensitivity Checks
+
+```{python}
+path = docs / "tables" / "paired_patient_signature_contrasts.csv"
+if path.exists():
+    display(pd.read_csv(path).head(14))
+else:
+    display(Markdown("*Run `scripts/07_paired_patient_analysis.py` to populate paired-patient checks.*"))
+```
+
+```{python}
+show_png("paired_patient_signature_deltas.png", "Paired patient TME signature contrasts")
 ```
 
 ## Limitations
 
-This first version is annotation-first. Expression-matrix signature scoring and pseudo-bulk differential expression should be added only after careful memory-aware parsing of the GEO expression matrices.
-
+This analysis uses public processed GEO supplements and should be interpreted as exploratory. Tissue-site comparisons are observational, cell-type annotations are inherited from the public dataset, and paired-patient contrasts are limited by the number of patients with matched tissue contexts. Full malignant-cell copy-number inference and formal mixed-effect modeling remain outside this first-pass workflow.

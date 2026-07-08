@@ -3,8 +3,8 @@ numpy
 matplotlib
 seaborn
 scipy
+statsmodels
 scanpy
 anndata
 pyyaml
 openpyxl
-

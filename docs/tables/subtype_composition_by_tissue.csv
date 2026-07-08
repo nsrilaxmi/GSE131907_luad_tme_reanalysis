@@ -1,0 +1,254 @@
+tissue_site,cell_type_clean,Cell_subtype,n_cells,total_cells,fraction
+advanced_airway_tumor,B lymphocytes,Follicular B cells,5501,30496,0.18038431269674712
+advanced_airway_tumor,B lymphocytes,GC B cells in the DZ,234,30496,0.007673137460650577
+advanced_airway_tumor,B lymphocytes,GC B cells in the LZ,149,30496,0.00488588667366212
+advanced_airway_tumor,B lymphocytes,GrB-secreting B cells,2,30496,6.558237145855194e-05
+advanced_airway_tumor,B lymphocytes,MALT B cells,258,30496,0.0084601259181532
+advanced_airway_tumor,B lymphocytes,Plasma cells,109,30496,0.003574239244491081
+advanced_airway_tumor,B lymphocytes,Undetermined,278,30496,0.009115949632738719
+advanced_airway_tumor,Epithelial cells,Malignant cells,9361,30496,0.30695828961175237
+advanced_airway_tumor,Fibroblasts,COL13A1+ matrix FBs,20,30496,0.0006558237145855194
+advanced_airway_tumor,Fibroblasts,COL14A1+ matrix FBs,2,30496,6.558237145855194e-05
+advanced_airway_tumor,Fibroblasts,EPCs,1,30496,3.279118572927597e-05
+advanced_airway_tumor,Fibroblasts,Lymphatic ECs,7,30496,0.0002295383001049318
+advanced_airway_tumor,Fibroblasts,Mesothelial cells,1,30496,3.279118572927597e-05
+advanced_airway_tumor,Fibroblasts,Myofibroblasts,69,30496,0.002262591815320042
+advanced_airway_tumor,Fibroblasts,Pericytes,9,30496,0.00029512067156348376
+advanced_airway_tumor,Fibroblasts,Smooth muscle cells,7,30496,0.0002295383001049318
+advanced_airway_tumor,Fibroblasts,Tumor ECs,18,30496,0.0005902413431269675
+advanced_airway_tumor,Fibroblasts,Undetermined,3,30496,9.837355718782791e-05
+advanced_airway_tumor,Myeloid cells,Activated DCs,36,30496,0.001180482686253935
+advanced_airway_tumor,Myeloid cells,Alveolar Mac,91,30496,0.0029839979013641135
+advanced_airway_tumor,Myeloid cells,CD141+ DCs,22,30496,0.0007214060860440713
+advanced_airway_tumor,Myeloid cells,CD163+CD14+ DCs,204,30496,0.006689401888772298
+advanced_airway_tumor,Myeloid cells,CD1c+ DCs,107,30496,0.003508656873032529
+advanced_airway_tumor,Myeloid cells,CD207+CD1a+ LCs,69,30496,0.002262591815320042
+advanced_airway_tumor,Myeloid cells,Microglia/Mac,7,30496,0.0002295383001049318
+advanced_airway_tumor,Myeloid cells,Monocytes,1062,30496,0.03482423924449108
+advanced_airway_tumor,Myeloid cells,Pleural Mac,82,30496,0.0026888772298006296
+advanced_airway_tumor,Myeloid cells,Undetermined,740,30496,0.02426547743966422
+advanced_airway_tumor,Myeloid cells,mo-Mac,4301,30496,0.14103488982161594
+advanced_airway_tumor,Myeloid cells,pDCs,50,30496,0.0016395592864637985
+advanced_airway_tumor,NK cells,CD8 low T,4,30496,0.00013116474291710389
+advanced_airway_tumor,NK cells,Cytotoxic CD8+ T,10,30496,0.0003279118572927597
+advanced_airway_tumor,NK cells,NK,885,30496,0.029020199370409235
+advanced_airway_tumor,NK cells,Undetermined,10,30496,0.0003279118572927597
+advanced_airway_tumor,T lymphocytes,CD4+ Th,743,30496,0.024363850996852045
+advanced_airway_tumor,T lymphocytes,CD8 low T,699,30496,0.022921038824763904
+advanced_airway_tumor,T lymphocytes,CD8+/CD4+ Mixed Th,7,30496,0.0002295383001049318
+advanced_airway_tumor,T lymphocytes,Cytotoxic CD8+ T,524,30496,0.017182581322140608
+advanced_airway_tumor,T lymphocytes,Exhausted CD8+ T,889,30496,0.029151364113326337
+advanced_airway_tumor,T lymphocytes,Exhausted Tfh,38,30496,0.001246065057712487
+advanced_airway_tumor,T lymphocytes,NK,242,30496,0.007935466946484785
+advanced_airway_tumor,T lymphocytes,Naive CD4+ T,2167,30496,0.07105849947534103
+advanced_airway_tumor,T lymphocytes,Naive CD8+ T,336,30496,0.011017838405036727
+advanced_airway_tumor,T lymphocytes,Treg,979,30496,0.032102570828961174
+advanced_airway_tumor,T lymphocytes,Undetermined,163,30496,0.005344963273871984
+non_smoker_lung,B lymphocytes,Follicular B cells,675,26185,0.0257781172426962
+non_smoker_lung,B lymphocytes,GC B cells in the DZ,1,26185,3.818980332251289e-05
+non_smoker_lung,B lymphocytes,GrB-secreting B cells,4,26185,0.00015275921329005156
+non_smoker_lung,B lymphocytes,MALT B cells,326,26185,0.012449875883139202
+non_smoker_lung,B lymphocytes,Plasma cells,299,26185,0.011418751193431354
+non_smoker_lung,B lymphocytes,Undetermined,6,26185,0.00022913881993507734
+non_smoker_lung,Epithelial cells,Malignant cells,15423,26185,0.5890013366431163
+non_smoker_lung,Fibroblasts,FB-like cells,200,26185,0.007637960664502578
+non_smoker_lung,Fibroblasts,Lymphatic ECs,2,26185,7.637960664502578e-05
+non_smoker_lung,Fibroblasts,Myofibroblasts,10,26185,0.0003818980332251289
+non_smoker_lung,Fibroblasts,Pericytes,217,26185,0.008287187320985297
+non_smoker_lung,Fibroblasts,Smooth muscle cells,8,26185,0.0003055184265801031
+non_smoker_lung,Fibroblasts,Stalk-like ECs,2,26185,7.637960664502578e-05
+non_smoker_lung,Fibroblasts,Tumor ECs,155,26185,0.005919419514989498
+non_smoker_lung,Fibroblasts,Undetermined,9,26185,0.000343708229902616
+non_smoker_lung,MAST cells,MAST,508,26185,0.01940042008783655
+non_smoker_lung,Myeloid cells,Activated DCs,3,26185,0.00011456940996753867
+non_smoker_lung,Myeloid cells,Alveolar Mac,133,26185,0.005079243841894214
+non_smoker_lung,Myeloid cells,CD141+ DCs,16,26185,0.0006110368531602062
+non_smoker_lung,Myeloid cells,CD163+CD14+ DCs,177,26185,0.0067595951880847814
+non_smoker_lung,Myeloid cells,CD1c+ DCs,37,26185,0.0014130227229329768
+non_smoker_lung,Myeloid cells,CD207+CD1a+ LCs,15,26185,0.0005728470498376934
+non_smoker_lung,Myeloid cells,Microglia/Mac,563,26185,0.021500859270574758
+non_smoker_lung,Myeloid cells,Monocytes,251,26185,0.009585640633950735
+non_smoker_lung,Myeloid cells,Pleural Mac,73,26185,0.002787855642543441
+non_smoker_lung,Myeloid cells,Undetermined,445,26185,0.016994462478518237
+non_smoker_lung,Myeloid cells,mo-Mac,3942,26185,0.1505442046973458
+non_smoker_lung,Myeloid cells,pDCs,2,26185,7.637960664502578e-05
+non_smoker_lung,NK cells,CD4+ Th,3,26185,0.00011456940996753867
+non_smoker_lung,NK cells,CD8 low T,25,26185,0.0009547450830628223
+non_smoker_lung,NK cells,Cytotoxic CD8+ T,7,26185,0.00026732862325759023
+non_smoker_lung,NK cells,Exhausted CD8+ T,1,26185,3.818980332251289e-05
+non_smoker_lung,NK cells,NK,301,26185,0.01149513080007638
+non_smoker_lung,NK cells,Naive CD4+ T,3,26185,0.00011456940996753867
+non_smoker_lung,NK cells,Undetermined,14,26185,0.0005346572465151805
+non_smoker_lung,T lymphocytes,CD4+ Th,337,26185,0.012869963719686843
+non_smoker_lung,T lymphocytes,CD8 low T,121,26185,0.00462096620202406
+non_smoker_lung,T lymphocytes,CD8+/CD4+ Mixed Th,38,26185,0.0014512125262554898
+non_smoker_lung,T lymphocytes,Cytotoxic CD8+ T,29,26185,0.0011075042963528737
+non_smoker_lung,T lymphocytes,Exhausted CD8+ T,363,26185,0.013862898606072179
+non_smoker_lung,T lymphocytes,Exhausted Tfh,6,26185,0.00022913881993507734
+non_smoker_lung,T lymphocytes,NK,5,26185,0.00019094901661256445
+non_smoker_lung,T lymphocytes,Naive CD4+ T,256,26185,0.0097765896505633
+non_smoker_lung,T lymphocytes,Naive CD8+ T,39,26185,0.0014894023295780026
+non_smoker_lung,T lymphocytes,Treg,348,26185,0.013290051556234486
+non_smoker_lung,T lymphocytes,Undetermined,787,26185,0.030055375214817645
+normal_lung,B lymphocytes,Follicular B cells,332,36381,0.009125642505703526
+normal_lung,B lymphocytes,GC B cells in the DZ,1,36381,2.7486875017179296e-05
+normal_lung,B lymphocytes,GrB-secreting B cells,186,36381,0.0051125587531953495
+normal_lung,B lymphocytes,MALT B cells,76,36381,0.0020890025013056267
+normal_lung,B lymphocytes,Plasma cells,23,36381,0.0006321981253951238
+normal_lung,B lymphocytes,Undetermined,16,36381,0.00043979000027486874
+normal_lung,Endothelial cells,EPCs,65,36381,0.0017866468761166543
+normal_lung,Endothelial cells,Lymphatic ECs,207,36381,0.005689783128556115
+normal_lung,Endothelial cells,Stalk-like ECs,322,36381,0.008850773755531734
+normal_lung,Endothelial cells,Tip-like ECs,654,36381,0.01797641626123526
+normal_lung,Endothelial cells,Tumor ECs,47,36381,0.001291883125807427
+normal_lung,Epithelial cells,AT1,530,36381,0.014568043759105028
+normal_lung,Epithelial cells,AT2,2020,36381,0.05552348753470218
+normal_lung,Epithelial cells,Ciliated,654,36381,0.01797641626123526
+normal_lung,Epithelial cells,Club,439,36381,0.01206673813254171
+normal_lung,Epithelial cells,Undetermined,60,36381,0.0016492125010307578
+normal_lung,Fibroblasts,COL13A1+ matrix FBs,259,36381,0.007119100629449438
+normal_lung,Fibroblasts,COL14A1+ matrix FBs,1078,36381,0.029630851268519283
+normal_lung,Fibroblasts,FB-like cells,1,36381,2.7486875017179296e-05
+normal_lung,Fibroblasts,Mesothelial cells,13,36381,0.00035732937522333085
+normal_lung,Fibroblasts,Myofibroblasts,15,36381,0.00041230312525768946
+normal_lung,Fibroblasts,Pericytes,28,36381,0.0007696325004810204
+normal_lung,Fibroblasts,Smooth muscle cells,69,36381,0.0018965943761853714
+normal_lung,Fibroblasts,Undetermined,122,36381,0.0033533987520958744
+normal_lung,MAST cells,MAST,1079,36381,0.02965833814353646
+normal_lung,Myeloid cells,Activated DCs,66,36381,0.0018141337511338336
+normal_lung,Myeloid cells,Alveolar Mac,12211,36381,0.3356422308347764
+normal_lung,Myeloid cells,CD141+ DCs,101,36381,0.002776174376735109
+normal_lung,Myeloid cells,CD163+CD14+ DCs,143,36381,0.003930623127456639
+normal_lung,Myeloid cells,CD1c+ DCs,880,36381,0.024188450015117782
+normal_lung,Myeloid cells,CD207+CD1a+ LCs,6,36381,0.00016492125010307578
+normal_lung,Myeloid cells,Monocytes,2319,36381,0.06374206316483878
+normal_lung,Myeloid cells,Pleural Mac,67,36381,0.001841620626151013
+normal_lung,Myeloid cells,Undetermined,69,36381,0.0018965943761853714
+normal_lung,Myeloid cells,mo-Mac,808,36381,0.022209395013880872
+normal_lung,Myeloid cells,pDCs,2,36381,5.497375003435859e-05
+normal_lung,NK cells,CD8 low T,29,36381,0.0007971193754981996
+normal_lung,NK cells,Cytotoxic CD8+ T,13,36381,0.00035732937522333085
+normal_lung,NK cells,NK,4195,36381,0.11530744069706715
+normal_lung,NK cells,Undetermined,30,36381,0.0008246062505153789
+normal_lung,T lymphocytes,CD4+ Th,3101,36381,0.085236799428273
+normal_lung,T lymphocytes,CD8 low T,651,36381,0.017893955636183723
+normal_lung,T lymphocytes,CD8+/CD4+ Mixed Th,7,36381,0.0001924081251202551
+normal_lung,T lymphocytes,Cytotoxic CD8+ T,2028,36381,0.05574338253483961
+normal_lung,T lymphocytes,Exhausted CD8+ T,177,36381,0.004865176878040735
+normal_lung,T lymphocytes,Exhausted Tfh,12,36381,0.00032984250020615157
+normal_lung,T lymphocytes,NK,557,36381,0.015310189384568868
+normal_lung,T lymphocytes,Naive CD4+ T,280,36381,0.007696325004810203
+normal_lung,T lymphocytes,Naive CD8+ T,61,36381,0.0016766993760479372
+normal_lung,T lymphocytes,Treg,196,36381,0.005387427503367142
+normal_lung,T lymphocytes,Undetermined,76,36381,0.0020890025013056267
+normal_lymph_node,B lymphocytes,Follicular B cells,8982,31350,0.2865071770334928
+normal_lymph_node,B lymphocytes,GC B cells in the DZ,169,31350,0.005390749601275917
+normal_lymph_node,B lymphocytes,GC B cells in the LZ,132,31350,0.004210526315789474
+normal_lymph_node,B lymphocytes,GrB-secreting B cells,12,31350,0.0003827751196172249
+normal_lymph_node,B lymphocytes,MALT B cells,525,31350,0.01674641148325359
+normal_lymph_node,B lymphocytes,Plasma cells,488,31350,0.015566188197767145
+normal_lymph_node,B lymphocytes,Undetermined,276,31350,0.008803827751196171
+normal_lymph_node,Myeloid cells,Activated DCs,122,31350,0.003891547049441786
+normal_lymph_node,Myeloid cells,CD141+ DCs,27,31350,0.000861244019138756
+normal_lymph_node,Myeloid cells,CD163+CD14+ DCs,8,31350,0.00025518341307814995
+normal_lymph_node,Myeloid cells,CD1c+ DCs,181,31350,0.0057735247208931416
+normal_lymph_node,Myeloid cells,Monocytes,32,31350,0.0010207336523125998
+normal_lymph_node,Myeloid cells,Pleural Mac,15,31350,0.0004784688995215311
+normal_lymph_node,Myeloid cells,Undetermined,868,31350,0.027687400318979268
+normal_lymph_node,Myeloid cells,mo-Mac,33,31350,0.0010526315789473684
+normal_lymph_node,Myeloid cells,pDCs,2,31350,6.379585326953749e-05
+normal_lymph_node,T lymphocytes,CD4+ Th,1159,31350,0.03696969696969697
+normal_lymph_node,T lymphocytes,CD8 low T,921,31350,0.02937799043062201
+normal_lymph_node,T lymphocytes,CD8+/CD4+ Mixed Th,52,31350,0.0016586921850079745
+normal_lymph_node,T lymphocytes,Cytotoxic CD8+ T,185,31350,0.005901116427432217
+normal_lymph_node,T lymphocytes,Exhausted CD8+ T,168,31350,0.005358851674641148
+normal_lymph_node,T lymphocytes,Exhausted Tfh,1,31350,3.189792663476874e-05
+normal_lymph_node,T lymphocytes,NK,307,31350,0.009792663476874004
+normal_lymph_node,T lymphocytes,Naive CD4+ T,13713,31350,0.43741626794258376
+normal_lymph_node,T lymphocytes,Naive CD8+ T,1317,31350,0.04200956937799043
+normal_lymph_node,T lymphocytes,Treg,1516,31350,0.04835725677830941
+normal_lymph_node,T lymphocytes,Undetermined,139,31350,0.004433811802232855
+pleural_effusion,B lymphocytes,Follicular B cells,3019,15540,0.19427284427284428
+pleural_effusion,B lymphocytes,GC B cells in the DZ,1,15540,6.435006435006435e-05
+pleural_effusion,B lymphocytes,GrB-secreting B cells,1,15540,6.435006435006435e-05
+pleural_effusion,B lymphocytes,MALT B cells,109,15540,0.007014157014157014
+pleural_effusion,B lymphocytes,Plasma cells,3,15540,0.00019305019305019305
+pleural_effusion,B lymphocytes,Undetermined,152,15540,0.009781209781209782
+pleural_effusion,Myeloid cells,Activated DCs,75,15540,0.004826254826254826
+pleural_effusion,Myeloid cells,Alveolar Mac,2,15540,0.0001287001287001287
+pleural_effusion,Myeloid cells,CD141+ DCs,42,15540,0.002702702702702703
+pleural_effusion,Myeloid cells,CD163+CD14+ DCs,5,15540,0.00032175032175032174
+pleural_effusion,Myeloid cells,CD1c+ DCs,49,15540,0.003153153153153153
+pleural_effusion,Myeloid cells,Microglia/Mac,1,15540,6.435006435006435e-05
+pleural_effusion,Myeloid cells,Monocytes,8,15540,0.0005148005148005148
+pleural_effusion,Myeloid cells,Pleural Mac,2713,15540,0.17458172458172458
+pleural_effusion,Myeloid cells,Undetermined,142,15540,0.009137709137709138
+pleural_effusion,Myeloid cells,mo-Mac,26,15540,0.0016731016731016731
+pleural_effusion,NK cells,CD8 low T,47,15540,0.0030244530244530245
+pleural_effusion,NK cells,Cytotoxic CD8+ T,26,15540,0.0016731016731016731
+pleural_effusion,NK cells,Exhausted CD8+ T,15,15540,0.0009652509652509653
+pleural_effusion,NK cells,NK,514,15540,0.033075933075933074
+pleural_effusion,NK cells,Naive CD4+ T,5,15540,0.00032175032175032174
+pleural_effusion,NK cells,Naive CD8+ T,20,15540,0.001287001287001287
+pleural_effusion,NK cells,Treg,1,15540,6.435006435006435e-05
+pleural_effusion,NK cells,Undetermined,2,15540,0.0001287001287001287
+pleural_effusion,T lymphocytes,CD4+ Th,30,15540,0.0019305019305019305
+pleural_effusion,T lymphocytes,CD8 low T,1644,15540,0.10579150579150579
+pleural_effusion,T lymphocytes,Cytotoxic CD8+ T,123,15540,0.007915057915057915
+pleural_effusion,T lymphocytes,Exhausted CD8+ T,423,15540,0.02722007722007722
+pleural_effusion,T lymphocytes,NK,3,15540,0.00019305019305019305
+pleural_effusion,T lymphocytes,Naive CD4+ T,4360,15540,0.2805662805662806
+pleural_effusion,T lymphocytes,Naive CD8+ T,1398,15540,0.08996138996138996
+pleural_effusion,T lymphocytes,Treg,518,15540,0.03333333333333333
+pleural_effusion,T lymphocytes,Undetermined,63,15540,0.004054054054054054
+primary_tumor,B lymphocytes,Follicular B cells,3580,38489,0.09301358829795527
+primary_tumor,B lymphocytes,GC B cells in the DZ,70,38489,0.001818701447166723
+primary_tumor,B lymphocytes,GC B cells in the LZ,92,38489,0.0023902933305619788
+primary_tumor,B lymphocytes,MALT B cells,1126,38489,0.029255111850139
+primary_tumor,B lymphocytes,Plasma cells,314,38489,0.008158175063005015
+primary_tumor,B lymphocytes,Undetermined,130,38489,0.003377588401881057
+primary_tumor,Endothelial cells,EPCs,8,38489,0.0002078515939619112
+primary_tumor,Endothelial cells,Lymphatic ECs,73,38489,0.0018966457949024396
+primary_tumor,Endothelial cells,Stalk-like ECs,103,38489,0.0026760892722596068
+primary_tumor,Endothelial cells,Tip-like ECs,168,38489,0.004364883473200135
+primary_tumor,Endothelial cells,Tumor ECs,274,38489,0.007118917093195458
+primary_tumor,Epithelial cells,tS1,3270,38489,0.0849593390319312
+primary_tumor,Epithelial cells,tS2,3018,38489,0.078412013822131
+primary_tumor,Epithelial cells,tS3,64,38489,0.0016628127516952896
+primary_tumor,Fibroblasts,COL13A1+ matrix FBs,703,38489,0.018264958819402946
+primary_tumor,Fibroblasts,COL14A1+ matrix FBs,390,38489,0.010132765205643171
+primary_tumor,Fibroblasts,EPCs,1,38489,2.59814492452389e-05
+primary_tumor,Fibroblasts,Mesothelial cells,21,38489,0.0005456104341500169
+primary_tumor,Fibroblasts,Myofibroblasts,245,38489,0.0063654550650835305
+primary_tumor,Fibroblasts,Pericytes,45,38489,0.0011691652160357505
+primary_tumor,Fibroblasts,Smooth muscle cells,139,38489,0.003611421445088207
+primary_tumor,Fibroblasts,Undetermined,111,38489,0.002883940866221518
+primary_tumor,MAST cells,MAST,1809,38489,0.04700044168463717
+primary_tumor,Myeloid cells,Activated DCs,154,38489,0.00400114318376679
+primary_tumor,Myeloid cells,Alveolar Mac,1324,38489,0.034399438800696305
+primary_tumor,Myeloid cells,CD141+ DCs,95,38489,0.0024682376782976957
+primary_tumor,Myeloid cells,CD163+CD14+ DCs,660,38489,0.017147756501857674
+primary_tumor,Myeloid cells,CD1c+ DCs,528,38489,0.01371820520148614
+primary_tumor,Myeloid cells,CD207+CD1a+ LCs,87,38489,0.002260386084335784
+primary_tumor,Myeloid cells,Monocytes,639,38489,0.016602146067707657
+primary_tumor,Myeloid cells,Pleural Mac,29,38489,0.000753462028111928
+primary_tumor,Myeloid cells,Undetermined,484,38489,0.012575021434695627
+primary_tumor,Myeloid cells,mo-Mac,4678,38489,0.12154121956922757
+primary_tumor,Myeloid cells,pDCs,116,38489,0.003013848112447712
+primary_tumor,NK cells,CD4+ Th,1,38489,2.59814492452389e-05
+primary_tumor,NK cells,CD8 low T,9,38489,0.0002338330432071501
+primary_tumor,NK cells,Cytotoxic CD8+ T,24,38489,0.0006235547818857336
+primary_tumor,NK cells,Exhausted CD8+ T,1,38489,2.59814492452389e-05
+primary_tumor,NK cells,NK,500,38489,0.01299072462261945
+primary_tumor,NK cells,Undetermined,3,38489,7.79443477357167e-05
+primary_tumor,T lymphocytes,CD4+ Th,3571,38489,0.0927797552547481
+primary_tumor,T lymphocytes,CD8 low T,776,38489,0.020161604614305387
+primary_tumor,T lymphocytes,CD8+/CD4+ Mixed Th,2464,38489,0.06401829094026865
+primary_tumor,T lymphocytes,Cytotoxic CD8+ T,394,38489,0.010236691002624126
+primary_tumor,T lymphocytes,Exhausted CD8+ T,1761,38489,0.0457533321208657
+primary_tumor,T lymphocytes,Exhausted Tfh,385,38489,0.010002857959416977
+primary_tumor,T lymphocytes,NK,239,38489,0.006209566369612097
+primary_tumor,T lymphocytes,Naive CD4+ T,1743,38489,0.0452856660344514
+primary_tumor,T lymphocytes,Naive CD8+ T,203,38489,0.005274234196783497
+primary_tumor,T lymphocytes,Treg,1608,38489,0.04177817038634415
+primary_tumor,T lymphocytes,Undetermined,259,38489,0.006729195354516875

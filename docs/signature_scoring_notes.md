@@ -45,10 +45,40 @@ docs/tables/signature_genes_found.csv
 
 These scores are exploratory summaries, not formal differential expression tests. They are intended to show tissue-site and compartment-level TME patterns while respecting sample and cell-type structure.
 
+## Contrast Testing
+
+`scripts/05_signature_statistics.py` compares selected signature scores between tissue sites within relevant cell compartments. Current contrasts include:
+
+- T lymphocytes: tumor-associated sites versus normal lymph node for exhaustion and cytotoxicity
+- Myeloid cells: tumor-associated sites versus normal lymph node for inflammatory and macrophage-like programs
+- Epithelial cells: tumor-associated sites versus normal lung for EMT/invasion, hypoxia, and proliferation
+
+For each contrast, the script reports:
+
+- number of contributing sample/cell-type profiles
+- mean score in the contrast and reference groups
+- mean difference
+- Cohen's d
+- Mann-Whitney U p-value
+- Benjamini-Hochberg adjusted p-value
+
 Recommended next steps:
 
-- add sample-aware statistical testing for selected signatures
+- extend the current paired-patient sensitivity checks into formal mixed-effect modeling where sample sizes support it
 - subset malignant epithelial cells before interpreting EMT/hypoxia/proliferation biologically
 - compare simple mean-gene scoring against AUCell, decoupler, or GSVA-style methods
 - evaluate whether results are robust to minimum cell-count thresholds per sample/cell type
 
+## Paired-Patient Sensitivity Checks
+
+`scripts/07_paired_patient_analysis.py` uses `signature_scores_by_sample_celltype.csv` to compare tissue contexts within the same patient where matched samples are available.
+
+The script reports:
+
+- number of paired patients
+- mean and median within-patient score difference
+- Wilcoxon signed-rank p-value
+- Benjamini-Hochberg adjusted p-value
+- contributing paired patient IDs
+
+These checks are most informative for contrasts with larger paired counts, such as primary tumor versus normal lung epithelial signatures. Comparisons with only a few paired patients are retained for transparency but should be treated as descriptive.
