@@ -1,0 +1,13 @@
+from __future__ import annotations
+
+
+SIGNATURES = {
+    "T_CELL_EXHAUSTION": ["PDCD1", "CTLA4", "LAG3", "HAVCR2", "TIGIT", "TOX"],
+    "CYTOTOXICITY": ["GZMB", "GZMA", "PRF1", "NKG7", "GNLY", "IFNG"],
+    "MYELOID_INFLAMMATION": ["IL1B", "TNF", "CXCL8", "S100A8", "S100A9", "FCN1"],
+    "MACROPHAGE_LIKE": ["APOE", "C1QA", "C1QB", "MRC1", "MARCO", "CD163"],
+    "EMT_INVASION": ["VIM", "ZEB1", "ZEB2", "SNAI1", "SNAI2", "ITGA5", "COL1A1"],
+    "HYPOXIA": ["VEGFA", "CA9", "SLC2A1", "LDHA", "ENO1", "BNIP3"],
+    "PROLIFERATION": ["MKI67", "TOP2A", "PCNA", "STMN1", "UBE2C", "HMGB2"],
+}
+

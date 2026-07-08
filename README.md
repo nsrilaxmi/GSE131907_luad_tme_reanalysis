@@ -94,11 +94,11 @@ bash scripts/run_all.sh
 Full expression-driven signature workflow:
 
 ```bash
-python3 scripts/00_download_geo.py
+python3 scripts/00_download_geo.py --raw-only
 bash scripts/run_all.sh --with-expression
 ```
 
-The expression matrix is large. The default workflow is intentionally annotation-first and lightweight.
+The raw UMI matrix is large but feasible to stream. The workflow avoids loading the full expression matrix into memory: it computes per-cell library sizes, extracts only selected tumor microenvironment signature genes, and summarizes scores at sample/cell-type/tissue-site level. The normalized log2TPM matrix is much larger and is not required for this workflow.
 
 ## Planned Outputs
 
@@ -107,13 +107,19 @@ docs/figures/
 ├── sample_counts_by_tissue.png
 ├── celltype_composition_by_tissue.png
 ├── top_celltypes_by_site.png
-└── tme_signature_preview.png
+├── tcell_signature_scores_by_site.png
+├── myeloid_signature_scores_by_site.png
+├── epithelial_signature_scores_by_site.png
+└── tme_signature_heatmap_by_site_celltype.png
 
 docs/tables/
 ├── sample_metadata_clean.csv
 ├── cell_counts_by_sample.csv
 ├── celltype_composition_by_sample.csv
-└── tissue_site_summary.csv
+├── tissue_site_summary.csv
+├── signature_genes_found.csv
+├── signature_scores_by_sample_celltype.csv
+└── signature_scores_by_tissue_celltype.csv
 ```
 
 ## Results Preview
@@ -132,9 +138,35 @@ The first public version includes lightweight annotation-derived preview outputs
 
 Preview tables are available in `docs/tables/`, including sample-level cell counts, sample-level composition, tissue-site summaries, and planned tumor microenvironment signature definitions.
 
+See [results_summary.md](docs/results_summary.md) for a concise interpretation of the current composition and signature-scoring outputs.
+
+### Expression-Based TME Signatures
+
+The upgraded workflow streams the raw UMI matrix and scores selected signatures after library-size normalization. Scores are summarized by sample, tissue site, and broad cell type.
+
+![T-cell signature scores by tissue site](docs/figures/tcell_signature_scores_by_site.png)
+
+![Myeloid signature scores by tissue site](docs/figures/myeloid_signature_scores_by_site.png)
+
+![Epithelial signature scores by tissue site](docs/figures/epithelial_signature_scores_by_site.png)
+
+![Mean TME signature heatmap by site and cell type](docs/figures/tme_signature_heatmap_by_site_celltype.png)
+
 ## Analysis Strategy
 
 This project treats samples/patients as the units of interpretation whenever possible. Cell-level patterns are used for visualization and annotation, while composition and signature summaries are aggregated at sample or tissue-site level before interpretation.
+
+## Signature Scoring Method
+
+For the expression-driven workflow, `scripts/04_signature_scoring.py` performs a memory-aware two-pass scan of `GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz`:
+
+1. compute total UMI library size for each cell
+2. extract only genes used in the curated TME signatures
+3. calculate `log1p(counts / library_size * 10000)` per gene
+4. average genes within each signature
+5. summarize scores by `sample x tissue_site x cell_type`
+
+The first-pass signature sets include T-cell exhaustion, cytotoxicity, myeloid inflammation, macrophage-like activity, EMT/invasion, hypoxia, and proliferation.
 
 ## Limitations
 
@@ -143,6 +175,7 @@ This project treats samples/patients as the units of interpretation whenever pos
 - Tumor samples are heterogeneous across tissue sites and collection procedures.
 - Tissue-site comparisons are observational and should not be interpreted as causal.
 - Full malignant-cell copy-number inference is outside the first-pass workflow.
+- Signature scores are compact exploratory summaries and should be interpreted alongside cell type, sample size, and tissue-site composition.
 
 ## Author
 

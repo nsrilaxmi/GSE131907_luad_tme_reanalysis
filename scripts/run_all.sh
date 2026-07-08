@@ -22,6 +22,5 @@ fi
 "$PYTHON_BIN" scripts/03_signature_plan.py
 
 if [[ "${1:-}" == "--with-expression" ]]; then
-  echo "Expression-matrix signature scoring is planned as an extension. The default committed workflow is annotation-first."
+  "$PYTHON_BIN" scripts/04_signature_scoring.py
 fi
-
