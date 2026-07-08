@@ -1,0 +1,396 @@
+sample,patient_id,tissue_site,cell_type_clean,n_cells,total_cells,fraction
+BRONCHO_11,11,advanced_airway_tumor,B lymphocytes,1413,3178,0.4446192573945878
+BRONCHO_11,11,advanced_airway_tumor,Epithelial cells,204,3178,0.06419131529263687
+BRONCHO_11,11,advanced_airway_tumor,Fibroblasts,10,3178,0.0031466331025802393
+BRONCHO_11,11,advanced_airway_tumor,Myeloid cells,739,3178,0.23253618628067968
+BRONCHO_11,11,advanced_airway_tumor,NK cells,26,3178,0.008181246066708621
+BRONCHO_11,11,advanced_airway_tumor,T lymphocytes,783,3178,0.24638137193203272
+BRONCHO_11,11,advanced_airway_tumor,Undetermined,3,3178,0.0009439899307740718
+BRONCHO_58,58,advanced_airway_tumor,B lymphocytes,162,2813,0.05758976182012087
+BRONCHO_58,58,advanced_airway_tumor,Epithelial cells,497,2813,0.1766797013864202
+BRONCHO_58,58,advanced_airway_tumor,Fibroblasts,91,2813,0.0323498044792037
+BRONCHO_58,58,advanced_airway_tumor,Myeloid cells,515,2813,0.18307856381087806
+BRONCHO_58,58,advanced_airway_tumor,NK cells,135,2813,0.047991468183434055
+BRONCHO_58,58,advanced_airway_tumor,T lymphocytes,1411,2813,0.5015997156061145
+BRONCHO_58,58,advanced_airway_tumor,Undetermined,2,2813,0.0007109847138286527
+EBUS_06,06,advanced_airway_tumor,B lymphocytes,111,2303,0.04819800260529744
+EBUS_06,06,advanced_airway_tumor,Epithelial cells,1197,2303,0.5197568389057751
+EBUS_06,06,advanced_airway_tumor,Fibroblasts,4,2303,0.0017368649587494573
+EBUS_06,06,advanced_airway_tumor,Myeloid cells,380,2303,0.16500217108119844
+EBUS_06,06,advanced_airway_tumor,NK cells,101,2303,0.04385584020842379
+EBUS_06,06,advanced_airway_tumor,T lymphocytes,510,2303,0.2214502822405558
+EBUS_10,10,advanced_airway_tumor,B lymphocytes,2366,5144,0.4599533437013997
+EBUS_10,10,advanced_airway_tumor,Epithelial cells,400,5144,0.07776049766718507
+EBUS_10,10,advanced_airway_tumor,Fibroblasts,12,5144,0.0023328149300155523
+EBUS_10,10,advanced_airway_tumor,Myeloid cells,835,5144,0.16232503888024882
+EBUS_10,10,advanced_airway_tumor,NK cells,34,5144,0.006609642301710731
+EBUS_10,10,advanced_airway_tumor,T lymphocytes,1496,5144,0.29082426127527217
+EBUS_10,10,advanced_airway_tumor,Undetermined,1,5144,0.00019440124416796267
+EBUS_12,12,advanced_airway_tumor,B lymphocytes,176,3115,0.0565008025682183
+EBUS_12,12,advanced_airway_tumor,Epithelial cells,262,3115,0.0841091492776886
+EBUS_12,12,advanced_airway_tumor,Fibroblasts,13,3115,0.004173354735152488
+EBUS_12,12,advanced_airway_tumor,Myeloid cells,2332,3115,0.7486356340288924
+EBUS_12,12,advanced_airway_tumor,NK cells,22,3115,0.007062600321027288
+EBUS_12,12,advanced_airway_tumor,T lymphocytes,306,3115,0.09823434991974318
+EBUS_12,12,advanced_airway_tumor,Undetermined,4,3115,0.0012841091492776886
+EBUS_13,13,advanced_airway_tumor,B lymphocytes,1871,3550,0.5270422535211268
+EBUS_13,13,advanced_airway_tumor,Epithelial cells,381,3550,0.10732394366197183
+EBUS_13,13,advanced_airway_tumor,Myeloid cells,145,3550,0.04084507042253521
+EBUS_13,13,advanced_airway_tumor,NK cells,1,3550,0.00028169014084507044
+EBUS_13,13,advanced_airway_tumor,T lymphocytes,1149,3550,0.32366197183098594
+EBUS_13,13,advanced_airway_tumor,Undetermined,3,3550,0.0008450704225352113
+EBUS_15,15,advanced_airway_tumor,B lymphocytes,39,1105,0.03529411764705882
+EBUS_15,15,advanced_airway_tumor,Epithelial cells,263,1105,0.23800904977375564
+EBUS_15,15,advanced_airway_tumor,Fibroblasts,1,1105,0.0009049773755656109
+EBUS_15,15,advanced_airway_tumor,Myeloid cells,319,1105,0.28868778280542984
+EBUS_15,15,advanced_airway_tumor,NK cells,152,1105,0.13755656108597286
+EBUS_15,15,advanced_airway_tumor,T lymphocytes,327,1105,0.29592760180995475
+EBUS_15,15,advanced_airway_tumor,Undetermined,4,1105,0.0036199095022624436
+EBUS_19,19,advanced_airway_tumor,B lymphocytes,98,2112,0.04640151515151515
+EBUS_19,19,advanced_airway_tumor,Epithelial cells,228,2112,0.10795454545454546
+EBUS_19,19,advanced_airway_tumor,Fibroblasts,1,2112,0.0004734848484848485
+EBUS_19,19,advanced_airway_tumor,Myeloid cells,356,2112,0.16856060606060605
+EBUS_19,19,advanced_airway_tumor,NK cells,251,2112,0.11884469696969698
+EBUS_19,19,advanced_airway_tumor,T lymphocytes,1176,2112,0.5568181818181818
+EBUS_19,19,advanced_airway_tumor,Undetermined,2,2112,0.000946969696969697
+EBUS_28,28,advanced_airway_tumor,B lymphocytes,7,5182,0.001350829795445774
+EBUS_28,28,advanced_airway_tumor,Epithelial cells,4766,5182,0.9197221150135083
+EBUS_28,28,advanced_airway_tumor,Fibroblasts,16,5182,0.0030876109610189118
+EBUS_28,28,advanced_airway_tumor,Myeloid cells,158,5182,0.03049015824006175
+EBUS_28,28,advanced_airway_tumor,NK cells,9,5182,0.0017367811655731378
+EBUS_28,28,advanced_airway_tumor,T lymphocytes,223,5182,0.04303357776920108
+EBUS_28,28,advanced_airway_tumor,Undetermined,3,5182,0.0005789270551910459
+EBUS_49,49,advanced_airway_tumor,B lymphocytes,189,1775,0.10647887323943662
+EBUS_49,49,advanced_airway_tumor,Epithelial cells,122,1775,0.06873239436619719
+EBUS_49,49,advanced_airway_tumor,Myeloid cells,276,1775,0.15549295774647887
+EBUS_49,49,advanced_airway_tumor,NK cells,338,1775,0.19042253521126762
+EBUS_49,49,advanced_airway_tumor,T lymphocytes,788,1775,0.443943661971831
+EBUS_49,49,advanced_airway_tumor,Undetermined,62,1775,0.03492957746478873
+EBUS_51,51,advanced_airway_tumor,B lymphocytes,99,3275,0.030229007633587785
+EBUS_51,51,advanced_airway_tumor,Epithelial cells,1315,3275,0.4015267175572519
+EBUS_51,51,advanced_airway_tumor,Myeloid cells,716,3275,0.21862595419847328
+EBUS_51,51,advanced_airway_tumor,NK cells,498,3275,0.15206106870229008
+EBUS_51,51,advanced_airway_tumor,T lymphocytes,645,3275,0.1969465648854962
+EBUS_51,51,advanced_airway_tumor,Undetermined,2,3275,0.0006106870229007634
+EFFUSION_06,06,pleural_effusion,B lymphocytes,446,4884,0.09131859131859132
+EFFUSION_06,06,pleural_effusion,Epithelial cells,228,4884,0.04668304668304668
+EFFUSION_06,06,pleural_effusion,Myeloid cells,846,4884,0.1732186732186732
+EFFUSION_06,06,pleural_effusion,NK cells,640,4884,0.13104013104013104
+EFFUSION_06,06,pleural_effusion,T lymphocytes,2653,4884,0.5432022932022932
+EFFUSION_06,06,pleural_effusion,Undetermined,71,4884,0.014537264537264538
+EFFUSION_11,11,pleural_effusion,B lymphocytes,100,2943,0.03397893306150187
+EFFUSION_11,11,pleural_effusion,Epithelial cells,81,2943,0.027522935779816515
+EFFUSION_11,11,pleural_effusion,Myeloid cells,688,2943,0.23377505946313284
+EFFUSION_11,11,pleural_effusion,NK cells,159,2943,0.05402650356778797
+EFFUSION_11,11,pleural_effusion,T lymphocytes,1789,2943,0.6078831124702684
+EFFUSION_11,11,pleural_effusion,Undetermined,126,2943,0.04281345565749235
+EFFUSION_12,12,pleural_effusion,B lymphocytes,795,4224,0.18821022727272727
+EFFUSION_12,12,pleural_effusion,Epithelial cells,25,4224,0.005918560606060606
+EFFUSION_12,12,pleural_effusion,Myeloid cells,1256,4224,0.29734848484848486
+EFFUSION_12,12,pleural_effusion,NK cells,286,4224,0.06770833333333333
+EFFUSION_12,12,pleural_effusion,T lymphocytes,1799,4224,0.4258996212121212
+EFFUSION_12,12,pleural_effusion,Undetermined,63,4224,0.014914772727272728
+EFFUSION_13,13,pleural_effusion,B lymphocytes,1012,4441,0.2278766043683855
+EFFUSION_13,13,pleural_effusion,Epithelial cells,47,4441,0.01058320198153569
+EFFUSION_13,13,pleural_effusion,Myeloid cells,194,4441,0.0436838549876154
+EFFUSION_13,13,pleural_effusion,NK cells,124,4441,0.027921639270434586
+EFFUSION_13,13,pleural_effusion,T lymphocytes,3044,4441,0.68543120918712
+EFFUSION_13,13,pleural_effusion,Undetermined,20,4441,0.004503490204908804
+EFFUSION_64,64,pleural_effusion,B lymphocytes,932,3812,0.24449108079748164
+EFFUSION_64,64,pleural_effusion,Epithelial cells,15,3812,0.003934942287513116
+EFFUSION_64,64,pleural_effusion,Myeloid cells,79,3812,0.020724029380902412
+EFFUSION_64,64,pleural_effusion,NK cells,88,3812,0.023084994753410283
+EFFUSION_64,64,pleural_effusion,T lymphocytes,2689,3812,0.7054039874081847
+EFFUSION_64,64,pleural_effusion,Undetermined,9,3812,0.00236096537250787
+LN_01,01,normal_lymph_node,B lymphocytes,1107,3626,0.30529509100937674
+LN_01,01,normal_lymph_node,Myeloid cells,101,3626,0.02785438499724214
+LN_01,01,normal_lymph_node,T lymphocytes,2399,3626,0.6616105901820187
+LN_01,01,normal_lymph_node,Undetermined,19,3626,0.005239933811362383
+LN_02,02,normal_lymph_node,B lymphocytes,687,3178,0.21617369414726242
+LN_02,02,normal_lymph_node,Myeloid cells,121,3178,0.03807426054122089
+LN_02,02,normal_lymph_node,T lymphocytes,2356,3178,0.7413467589679044
+LN_02,02,normal_lymph_node,Undetermined,14,3178,0.004405286343612335
+LN_03,03,normal_lymph_node,B lymphocytes,661,3013,0.2193826750746764
+LN_03,03,normal_lymph_node,Myeloid cells,79,3013,0.02621971457019582
+LN_03,03,normal_lymph_node,T lymphocytes,2232,3013,0.7407899103883173
+LN_03,03,normal_lymph_node,Undetermined,41,3013,0.013607699966810488
+LN_04,04,normal_lymph_node,B lymphocytes,747,3092,0.24159120310478654
+LN_04,04,normal_lymph_node,Myeloid cells,51,3092,0.016494178525226392
+LN_04,04,normal_lymph_node,T lymphocytes,2278,3092,0.7367399741267788
+LN_04,04,normal_lymph_node,Undetermined,16,3092,0.00517464424320828
+LN_05,05,normal_lymph_node,B lymphocytes,962,3087,0.31162941367023
+LN_05,05,normal_lymph_node,Myeloid cells,35,3087,0.011337868480725623
+LN_05,05,normal_lymph_node,T lymphocytes,2079,3087,0.673469387755102
+LN_05,05,normal_lymph_node,Undetermined,11,3087,0.0035633300939423387
+LN_06,06,normal_lymph_node,B lymphocytes,634,2936,0.2159400544959128
+LN_06,06,normal_lymph_node,Myeloid cells,73,2936,0.02486376021798365
+LN_06,06,normal_lymph_node,T lymphocytes,2197,2936,0.7482970027247956
+LN_06,06,normal_lymph_node,Undetermined,32,2936,0.010899182561307902
+LN_07,07,normal_lymph_node,B lymphocytes,1125,5713,0.1969193068440399
+LN_07,07,normal_lymph_node,Myeloid cells,154,5713,0.026956065114650797
+LN_07,07,normal_lymph_node,T lymphocytes,4408,5713,0.7715736040609137
+LN_07,07,normal_lymph_node,Undetermined,26,5713,0.004551023980395589
+LN_08,08,normal_lymph_node,B lymphocytes,1513,4395,0.34425483503981796
+LN_08,08,normal_lymph_node,Myeloid cells,152,4395,0.03458475540386803
+LN_08,08,normal_lymph_node,T lymphocytes,2717,4395,0.618202502844141
+LN_08,08,normal_lymph_node,Undetermined,13,4395,0.0029579067121729237
+LN_11,11,normal_lymph_node,B lymphocytes,984,3788,0.25976768743400214
+LN_11,11,normal_lymph_node,Myeloid cells,159,3788,0.04197465681098205
+LN_11,11,normal_lymph_node,T lymphocytes,2625,3788,0.6929778247096093
+LN_11,11,normal_lymph_node,Undetermined,20,3788,0.005279831045406547
+LN_12,12,normal_lymph_node,B lymphocytes,2164,4618,0.4686011260285838
+LN_12,12,normal_lymph_node,Myeloid cells,363,4618,0.07860545690775228
+LN_12,12,normal_lymph_node,T lymphocytes,2028,4618,0.43915114768297964
+LN_12,12,normal_lymph_node,Undetermined,63,4618,0.01364226938068428
+LUNG_N01,01,normal_lung,B lymphocytes,82,3194,0.02567313713212273
+LUNG_N01,01,normal_lung,Endothelial cells,34,3194,0.010644959298685034
+LUNG_N01,01,normal_lung,Epithelial cells,199,3194,0.06230432060112712
+LUNG_N01,01,normal_lung,Fibroblasts,17,3194,0.005322479649342517
+LUNG_N01,01,normal_lung,MAST cells,230,3194,0.07201001878522229
+LUNG_N01,01,normal_lung,Myeloid cells,1306,3194,0.408891671884784
+LUNG_N01,01,normal_lung,NK cells,374,3194,0.11709455228553538
+LUNG_N01,01,normal_lung,T lymphocytes,952,3194,0.29805886036318097
+LUNG_N06,06,normal_lung,B lymphocytes,29,2839,0.010214864388869321
+LUNG_N06,06,normal_lung,Endothelial cells,9,2839,0.0031701303275801338
+LUNG_N06,06,normal_lung,Epithelial cells,178,2839,0.06269813314547376
+LUNG_N06,06,normal_lung,Fibroblasts,10,2839,0.003522367030644593
+LUNG_N06,06,normal_lung,MAST cells,30,2839,0.010567101091933779
+LUNG_N06,06,normal_lung,Myeloid cells,1310,2839,0.4614300810144417
+LUNG_N06,06,normal_lung,NK cells,166,2839,0.058471292708700245
+LUNG_N06,06,normal_lung,T lymphocytes,1107,2839,0.38992603029235645
+LUNG_N08,08,normal_lung,B lymphocytes,60,3380,0.01775147928994083
+LUNG_N08,08,normal_lung,Endothelial cells,116,3380,0.03431952662721893
+LUNG_N08,08,normal_lung,Epithelial cells,299,3380,0.08846153846153847
+LUNG_N08,08,normal_lung,Fibroblasts,20,3380,0.005917159763313609
+LUNG_N08,08,normal_lung,MAST cells,84,3380,0.02485207100591716
+LUNG_N08,08,normal_lung,Myeloid cells,1349,3380,0.39911242603550295
+LUNG_N08,08,normal_lung,NK cells,737,3380,0.21804733727810652
+LUNG_N08,08,normal_lung,T lymphocytes,715,3380,0.21153846153846154
+LUNG_N09,09,normal_lung,B lymphocytes,83,2528,0.03283227848101266
+LUNG_N09,09,normal_lung,Endothelial cells,57,2528,0.02254746835443038
+LUNG_N09,09,normal_lung,Epithelial cells,384,2528,0.1518987341772152
+LUNG_N09,09,normal_lung,Fibroblasts,53,2528,0.020965189873417722
+LUNG_N09,09,normal_lung,MAST cells,103,2528,0.04074367088607595
+LUNG_N09,09,normal_lung,Myeloid cells,1171,2528,0.4632120253164557
+LUNG_N09,09,normal_lung,NK cells,179,2528,0.07080696202531646
+LUNG_N09,09,normal_lung,T lymphocytes,498,2528,0.19699367088607594
+LUNG_N18,18,normal_lung,B lymphocytes,89,4628,0.019230769230769232
+LUNG_N18,18,normal_lung,Endothelial cells,177,4628,0.03824546240276577
+LUNG_N18,18,normal_lung,Epithelial cells,399,4628,0.0862143474503025
+LUNG_N18,18,normal_lung,Fibroblasts,183,4628,0.0395419187554019
+LUNG_N18,18,normal_lung,MAST cells,82,4628,0.017718236819360415
+LUNG_N18,18,normal_lung,Myeloid cells,2041,4628,0.4410112359550562
+LUNG_N18,18,normal_lung,NK cells,312,4628,0.06741573033707865
+LUNG_N18,18,normal_lung,T lymphocytes,1345,4628,0.29062229904926534
+LUNG_N19,19,normal_lung,B lymphocytes,48,3870,0.012403100775193798
+LUNG_N19,19,normal_lung,Endothelial cells,403,3870,0.1041343669250646
+LUNG_N19,19,normal_lung,Epithelial cells,174,3870,0.04496124031007752
+LUNG_N19,19,normal_lung,Fibroblasts,85,3870,0.021963824289405683
+LUNG_N19,19,normal_lung,MAST cells,187,3870,0.04832041343669251
+LUNG_N19,19,normal_lung,Myeloid cells,1134,3870,0.2930232558139535
+LUNG_N19,19,normal_lung,NK cells,1041,3870,0.2689922480620155
+LUNG_N19,19,normal_lung,T lymphocytes,798,3870,0.2062015503875969
+LUNG_N20,20,normal_lung,B lymphocytes,36,5798,0.006209037599172128
+LUNG_N20,20,normal_lung,Endothelial cells,77,5798,0.013280441531562609
+LUNG_N20,20,normal_lung,Epithelial cells,305,5798,0.05260434632631942
+LUNG_N20,20,normal_lung,Fibroblasts,16,5798,0.0027595722662987236
+LUNG_N20,20,normal_lung,MAST cells,157,5798,0.027078302863056226
+LUNG_N20,20,normal_lung,Myeloid cells,3545,5798,0.611417730251811
+LUNG_N20,20,normal_lung,NK cells,766,5798,0.1321145222490514
+LUNG_N20,20,normal_lung,T lymphocytes,896,5798,0.15453604691272851
+LUNG_N28,28,normal_lung,B lymphocytes,36,3411,0.010554089709762533
+LUNG_N28,28,normal_lung,Endothelial cells,11,3411,0.0032248607446496626
+LUNG_N28,28,normal_lung,Epithelial cells,233,3411,0.06830841395485195
+LUNG_N28,28,normal_lung,Fibroblasts,12,3411,0.003518029903254178
+LUNG_N28,28,normal_lung,MAST cells,57,3411,0.016710642040457344
+LUNG_N28,28,normal_lung,Myeloid cells,785,3411,0.2301377895045441
+LUNG_N28,28,normal_lung,NK cells,659,3411,0.19319847552037525
+LUNG_N28,28,normal_lung,T lymphocytes,1618,3411,0.47434769862210496
+LUNG_N30,30,normal_lung,B lymphocytes,56,3884,0.014418125643666324
+LUNG_N30,30,normal_lung,Endothelial cells,187,3884,0.04814624098867147
+LUNG_N30,30,normal_lung,Epithelial cells,334,3884,0.08599382080329557
+LUNG_N30,30,normal_lung,Fibroblasts,230,3884,0.0592173017507724
+LUNG_N30,30,normal_lung,MAST cells,56,3884,0.014418125643666324
+LUNG_N30,30,normal_lung,Myeloid cells,935,3884,0.24073120494335737
+LUNG_N30,30,normal_lung,NK cells,581,3884,0.14958805355303811
+LUNG_N30,30,normal_lung,T lymphocytes,1505,3884,0.38748712667353247
+LUNG_N31,31,normal_lung,B lymphocytes,50,4241,0.01178967224711153
+LUNG_N31,31,normal_lung,Endothelial cells,180,4241,0.042442820089601506
+LUNG_N31,31,normal_lung,Epithelial cells,548,4241,0.12921480782834238
+LUNG_N31,31,normal_lung,Fibroblasts,858,4241,0.20231077576043385
+LUNG_N31,31,normal_lung,MAST cells,28,4241,0.006602216458382457
+LUNG_N31,31,normal_lung,Myeloid cells,1337,4241,0.31525583588776235
+LUNG_N31,31,normal_lung,NK cells,623,4241,0.14689931619900967
+LUNG_N31,31,normal_lung,T lymphocytes,617,4241,0.1454845555293563
+LUNG_N34,34,normal_lung,B lymphocytes,65,5222,0.0124473381846036
+LUNG_N34,34,normal_lung,Endothelial cells,90,5222,0.017234775947912676
+LUNG_N34,34,normal_lung,Epithelial cells,650,5222,0.124473381846036
+LUNG_N34,34,normal_lung,Fibroblasts,186,5222,0.03561853695901953
+LUNG_N34,34,normal_lung,MAST cells,65,5222,0.0124473381846036
+LUNG_N34,34,normal_lung,Myeloid cells,1759,5222,0.33684412102642664
+LUNG_N34,34,normal_lung,NK cells,1386,5222,0.26541554959785524
+LUNG_N34,34,normal_lung,T lymphocytes,1021,5222,0.1955189582535427
+LUNG_T06,06,primary_tumor,B lymphocytes,521,3426,0.15207238762405137
+LUNG_T06,06,primary_tumor,Endothelial cells,54,3426,0.01576182136602452
+LUNG_T06,06,primary_tumor,Epithelial cells,145,3426,0.04232340922358435
+LUNG_T06,06,primary_tumor,Fibroblasts,485,3426,0.14156450671336837
+LUNG_T06,06,primary_tumor,MAST cells,94,3426,0.027437244600116754
+LUNG_T06,06,primary_tumor,Myeloid cells,588,3426,0.17162872154115585
+LUNG_T06,06,primary_tumor,NK cells,40,3426,0.011675423234092236
+LUNG_T06,06,primary_tumor,T lymphocytes,1499,3426,0.43753648569760656
+LUNG_T08,08,primary_tumor,B lymphocytes,1014,3765,0.2693227091633466
+LUNG_T08,08,primary_tumor,Endothelial cells,14,3765,0.0037184594953519256
+LUNG_T08,08,primary_tumor,Epithelial cells,42,3765,0.011155378486055778
+LUNG_T08,08,primary_tumor,Fibroblasts,206,3765,0.05471447543160691
+LUNG_T08,08,primary_tumor,MAST cells,91,3765,0.024169986719787515
+LUNG_T08,08,primary_tumor,Myeloid cells,270,3765,0.07171314741035857
+LUNG_T08,08,primary_tumor,NK cells,22,3765,0.0058432934926958835
+LUNG_T08,08,primary_tumor,T lymphocytes,2106,3765,0.5593625498007968
+LUNG_T09,09,primary_tumor,B lymphocytes,153,3840,0.03984375
+LUNG_T09,09,primary_tumor,Endothelial cells,28,3840,0.007291666666666667
+LUNG_T09,09,primary_tumor,Epithelial cells,119,3840,0.030989583333333334
+LUNG_T09,09,primary_tumor,Fibroblasts,22,3840,0.005729166666666666
+LUNG_T09,09,primary_tumor,MAST cells,56,3840,0.014583333333333334
+LUNG_T09,09,primary_tumor,Myeloid cells,1481,3840,0.38567708333333334
+LUNG_T09,09,primary_tumor,NK cells,103,3840,0.026822916666666665
+LUNG_T09,09,primary_tumor,T lymphocytes,1878,3840,0.4890625
+LUNG_T18,18,primary_tumor,B lymphocytes,274,3705,0.07395411605937922
+LUNG_T18,18,primary_tumor,Endothelial cells,19,3705,0.005128205128205128
+LUNG_T18,18,primary_tumor,Epithelial cells,1028,3705,0.27746288798920377
+LUNG_T18,18,primary_tumor,Fibroblasts,188,3705,0.050742240215924425
+LUNG_T18,18,primary_tumor,MAST cells,87,3705,0.02348178137651822
+LUNG_T18,18,primary_tumor,Myeloid cells,1019,3705,0.2750337381916329
+LUNG_T18,18,primary_tumor,NK cells,60,3705,0.016194331983805668
+LUNG_T18,18,primary_tumor,T lymphocytes,1030,3705,0.27800269905533065
+LUNG_T19,19,primary_tumor,B lymphocytes,430,4361,0.09860123824810824
+LUNG_T19,19,primary_tumor,Endothelial cells,159,4361,0.03645952763127723
+LUNG_T19,19,primary_tumor,Epithelial cells,316,4361,0.07246044485209814
+LUNG_T19,19,primary_tumor,Fibroblasts,114,4361,0.02614079339601009
+LUNG_T19,19,primary_tumor,MAST cells,424,4361,0.09722540701673928
+LUNG_T19,19,primary_tumor,Myeloid cells,1206,4361,0.27654207750515936
+LUNG_T19,19,primary_tumor,NK cells,187,4361,0.042880073377665674
+LUNG_T19,19,primary_tumor,T lymphocytes,1525,4361,0.34969043797294197
+LUNG_T20,20,primary_tumor,B lymphocytes,53,4021,0.013180800795821936
+LUNG_T20,20,primary_tumor,Endothelial cells,3,4021,0.0007460830639144492
+LUNG_T20,20,primary_tumor,Epithelial cells,526,4021,0.13081323053966676
+LUNG_T20,20,primary_tumor,Fibroblasts,17,4021,0.004227804028848545
+LUNG_T20,20,primary_tumor,MAST cells,83,4021,0.020641631434966425
+LUNG_T20,20,primary_tumor,Myeloid cells,921,4021,0.2290475006217359
+LUNG_T20,20,primary_tumor,NK cells,80,4021,0.019895548371051976
+LUNG_T20,20,primary_tumor,T lymphocytes,2338,4021,0.5814474011439941
+LUNG_T25,25,primary_tumor,B lymphocytes,1707,4374,0.39026063100137176
+LUNG_T25,25,primary_tumor,Endothelial cells,32,4374,0.007315957933241884
+LUNG_T25,25,primary_tumor,Epithelial cells,226,4374,0.051668952903520804
+LUNG_T25,25,primary_tumor,Fibroblasts,21,4374,0.004801097393689987
+LUNG_T25,25,primary_tumor,MAST cells,185,4374,0.04229538180155464
+LUNG_T25,25,primary_tumor,Myeloid cells,604,4374,0.13808870598994055
+LUNG_T25,25,primary_tumor,NK cells,79,4374,0.0180612711476909
+LUNG_T25,25,primary_tumor,T lymphocytes,1520,4374,0.3475080018289895
+LUNG_T28,28,primary_tumor,B lymphocytes,586,4705,0.12454835281615304
+LUNG_T28,28,primary_tumor,Endothelial cells,30,4705,0.006376195536663124
+LUNG_T28,28,primary_tumor,Epithelial cells,1228,4705,0.2609989373007439
+LUNG_T28,28,primary_tumor,Fibroblasts,63,4705,0.013390010626992561
+LUNG_T28,28,primary_tumor,MAST cells,155,4705,0.03294367693942614
+LUNG_T28,28,primary_tumor,Myeloid cells,1012,4705,0.2150903294367694
+LUNG_T28,28,primary_tumor,NK cells,105,4705,0.022316684378320937
+LUNG_T28,28,primary_tumor,T lymphocytes,1526,4705,0.3243358129649309
+LUNG_T30,30,primary_tumor,B lymphocytes,118,4094,0.02882266731802638
+LUNG_T30,30,primary_tumor,Endothelial cells,153,4094,0.037371763556424034
+LUNG_T30,30,primary_tumor,Epithelial cells,882,4094,0.2154372252076209
+LUNG_T30,30,primary_tumor,Fibroblasts,73,4094,0.01783097215437225
+LUNG_T30,30,primary_tumor,MAST cells,478,4094,0.1167562286272594
+LUNG_T30,30,primary_tumor,Myeloid cells,976,4094,0.23839765510503175
+LUNG_T30,30,primary_tumor,NK cells,144,4094,0.03517342452369321
+LUNG_T30,30,primary_tumor,T lymphocytes,1270,4094,0.3102100635075721
+LUNG_T31,31,primary_tumor,B lymphocytes,419,5578,0.07511652922194335
+LUNG_T31,31,primary_tumor,Endothelial cells,144,5578,0.025815704553603443
+LUNG_T31,31,primary_tumor,Epithelial cells,272,5578,0.048762997490139834
+LUNG_T31,31,primary_tumor,Fibroblasts,500,5578,0.08963786303334528
+LUNG_T31,31,primary_tumor,MAST cells,117,5578,0.020975259949802795
+LUNG_T31,31,primary_tumor,Myeloid cells,413,5578,0.0740408748655432
+LUNG_T31,31,primary_tumor,NK cells,128,5578,0.022947292936536395
+LUNG_T31,31,primary_tumor,T lymphocytes,3585,5578,0.6427034779490857
+LUNG_T34,34,primary_tumor,B lymphocytes,37,3280,0.011280487804878048
+LUNG_T34,34,primary_tumor,Endothelial cells,19,3280,0.005792682926829268
+LUNG_T34,34,primary_tumor,Epithelial cells,2486,3280,0.7579268292682927
+LUNG_T34,34,primary_tumor,Fibroblasts,29,3280,0.008841463414634146
+LUNG_T34,34,primary_tumor,MAST cells,39,3280,0.011890243902439025
+LUNG_T34,34,primary_tumor,Myeloid cells,304,3280,0.09268292682926829
+LUNG_T34,34,primary_tumor,NK cells,56,3280,0.01707317073170732
+LUNG_T34,34,primary_tumor,T lymphocytes,310,3280,0.09451219512195122
+NS_02,02,non_smoker_lung,B lymphocytes,142,2313,0.061392131431041934
+NS_02,02,non_smoker_lung,Epithelial cells,181,2313,0.07825335062689148
+NS_02,02,non_smoker_lung,Fibroblasts,3,2313,0.0012970168612191958
+NS_02,02,non_smoker_lung,MAST cells,56,2313,0.02421098140942499
+NS_02,02,non_smoker_lung,Myeloid cells,863,2313,0.3731085170773887
+NS_02,02,non_smoker_lung,NK cells,443,2313,0.19152615650670127
+NS_02,02,non_smoker_lung,Oligodendrocytes,91,2313,0.039342844790315606
+NS_02,02,non_smoker_lung,T lymphocytes,534,2313,0.23086900129701687
+NS_03,03,non_smoker_lung,B lymphocytes,16,2990,0.005351170568561873
+NS_03,03,non_smoker_lung,Epithelial cells,2720,2990,0.9096989966555183
+NS_03,03,non_smoker_lung,Fibroblasts,10,2990,0.0033444816053511705
+NS_03,03,non_smoker_lung,Myeloid cells,99,2990,0.03311036789297659
+NS_03,03,non_smoker_lung,NK cells,65,2990,0.021739130434782608
+NS_03,03,non_smoker_lung,T lymphocytes,80,2990,0.026755852842809364
+NS_04,04,non_smoker_lung,B lymphocytes,4,1904,0.0021008403361344537
+NS_04,04,non_smoker_lung,Epithelial cells,1234,1904,0.648109243697479
+NS_04,04,non_smoker_lung,Fibroblasts,180,1904,0.09453781512605042
+NS_04,04,non_smoker_lung,MAST cells,1,1904,0.0005252100840336134
+NS_04,04,non_smoker_lung,Myeloid cells,348,1904,0.18277310924369747
+NS_04,04,non_smoker_lung,NK cells,20,1904,0.01050420168067227
+NS_04,04,non_smoker_lung,Oligodendrocytes,6,1904,0.0031512605042016808
+NS_04,04,non_smoker_lung,T lymphocytes,111,1904,0.058298319327731093
+NS_06,06,non_smoker_lung,B lymphocytes,30,1070,0.028037383177570093
+NS_06,06,non_smoker_lung,Epithelial cells,84,1070,0.07850467289719626
+NS_06,06,non_smoker_lung,Fibroblasts,46,1070,0.04299065420560748
+NS_06,06,non_smoker_lung,MAST cells,2,1070,0.001869158878504673
+NS_06,06,non_smoker_lung,Myeloid cells,440,1070,0.411214953271028
+NS_06,06,non_smoker_lung,NK cells,118,1070,0.1102803738317757
+NS_06,06,non_smoker_lung,Oligodendrocytes,85,1070,0.0794392523364486
+NS_06,06,non_smoker_lung,T lymphocytes,265,1070,0.24766355140186916
+NS_07,07,non_smoker_lung,B lymphocytes,54,5730,0.009424083769633508
+NS_07,07,non_smoker_lung,Epithelial cells,5112,5730,0.8921465968586387
+NS_07,07,non_smoker_lung,Fibroblasts,59,5730,0.010296684118673648
+NS_07,07,non_smoker_lung,MAST cells,1,5730,0.00017452006980802793
+NS_07,07,non_smoker_lung,Myeloid cells,313,5730,0.05462478184991274
+NS_07,07,non_smoker_lung,NK cells,39,5730,0.006806282722513089
+NS_07,07,non_smoker_lung,Oligodendrocytes,25,5730,0.004363001745200698
+NS_07,07,non_smoker_lung,T lymphocytes,127,5730,0.022164048865619547
+NS_12,12,non_smoker_lung,B lymphocytes,9,3182,0.0028284098051539913
+NS_12,12,non_smoker_lung,Epithelial cells,2815,3182,0.8846637335009429
+NS_12,12,non_smoker_lung,Fibroblasts,49,3182,0.015399120050282841
+NS_12,12,non_smoker_lung,MAST cells,1,3182,0.00031426775612822125
+NS_12,12,non_smoker_lung,Myeloid cells,286,3182,0.08988057825267128
+NS_12,12,non_smoker_lung,NK cells,9,3182,0.0028284098051539913
+NS_12,12,non_smoker_lung,T lymphocytes,13,3182,0.004085480829666876
+NS_13,13,non_smoker_lung,B lymphocytes,656,4845,0.13539731682146544
+NS_13,13,non_smoker_lung,Epithelial cells,1363,4845,0.28132094943240454
+NS_13,13,non_smoker_lung,Fibroblasts,15,4845,0.0030959752321981426
+NS_13,13,non_smoker_lung,MAST cells,440,4845,0.09081527347781218
+NS_13,13,non_smoker_lung,Myeloid cells,564,4845,0.11640866873065016
+NS_13,13,non_smoker_lung,NK cells,57,4845,0.011764705882352941
+NS_13,13,non_smoker_lung,Oligodendrocytes,27,4845,0.005572755417956657
+NS_13,13,non_smoker_lung,T lymphocytes,1723,4845,0.35562435500515993
+NS_16,16,non_smoker_lung,B lymphocytes,256,1317,0.19438116932422173
+NS_16,16,non_smoker_lung,Epithelial cells,81,1317,0.06150341685649203
+NS_16,16,non_smoker_lung,Fibroblasts,16,1317,0.012148823082763858
+NS_16,16,non_smoker_lung,MAST cells,3,1317,0.002277904328018223
+NS_16,16,non_smoker_lung,Myeloid cells,182,1317,0.13819286256643887
+NS_16,16,non_smoker_lung,NK cells,24,1317,0.018223234624145785
+NS_16,16,non_smoker_lung,Oligodendrocytes,394,1317,0.29916476841306
+NS_16,16,non_smoker_lung,T lymphocytes,361,1317,0.2741078208048595
+NS_17,17,non_smoker_lung,B lymphocytes,70,2409,0.029057700290577002
+NS_17,17,non_smoker_lung,Epithelial cells,1117,2409,0.46367787463677873
+NS_17,17,non_smoker_lung,Fibroblasts,88,2409,0.0365296803652968
+NS_17,17,non_smoker_lung,MAST cells,4,2409,0.0016604400166044002
+NS_17,17,non_smoker_lung,Myeloid cells,651,2409,0.27023661270236615
+NS_17,17,non_smoker_lung,NK cells,28,2409,0.011623080116230802
+NS_17,17,non_smoker_lung,Oligodendrocytes,69,2409,0.028642590286425903
+NS_17,17,non_smoker_lung,T lymphocytes,382,2409,0.1585720215857202
+NS_19,19,non_smoker_lung,B lymphocytes,74,3300,0.022424242424242423
+NS_19,19,non_smoker_lung,Epithelial cells,756,3300,0.2290909090909091
+NS_19,19,non_smoker_lung,Fibroblasts,170,3300,0.051515151515151514
+NS_19,19,non_smoker_lung,Myeloid cells,1911,3300,0.5790909090909091
+NS_19,19,non_smoker_lung,NK cells,56,3300,0.01696969696969697
+NS_19,19,non_smoker_lung,Oligodendrocytes,19,3300,0.005757575757575757
+NS_19,19,non_smoker_lung,T lymphocytes,314,3300,0.09515151515151515

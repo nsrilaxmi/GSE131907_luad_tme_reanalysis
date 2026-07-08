@@ -1,0 +1,42 @@
+tissue_site,cell_type_clean,n_cells,total_cells,fraction
+advanced_airway_tumor,B lymphocytes,6531,33552,0.19465307582260372
+advanced_airway_tumor,Epithelial cells,9635,33552,0.2871661897949452
+advanced_airway_tumor,Fibroblasts,148,33552,0.00441106342393896
+advanced_airway_tumor,Myeloid cells,6771,33552,0.20180615164520743
+advanced_airway_tumor,NK cells,1567,33552,0.04670362422508345
+advanced_airway_tumor,T lymphocytes,8814,33552,0.2626967095851216
+advanced_airway_tumor,Undetermined,86,33552,0.002563185503099666
+non_smoker_lung,B lymphocytes,1311,29060,0.04511355815554026
+non_smoker_lung,Epithelial cells,15463,29060,0.5321059876118376
+non_smoker_lung,Fibroblasts,636,29060,0.02188575361321404
+non_smoker_lung,MAST cells,508,29060,0.017481073640743288
+non_smoker_lung,Myeloid cells,5657,29060,0.19466620784583621
+non_smoker_lung,NK cells,859,29060,0.029559532002752926
+non_smoker_lung,Oligodendrocytes,716,29060,0.024638678596008257
+non_smoker_lung,T lymphocytes,3910,29060,0.13454920853406746
+normal_lung,B lymphocytes,634,42995,0.014745900686126294
+normal_lung,Endothelial cells,1341,42995,0.031189673217816027
+normal_lung,Epithelial cells,3703,42995,0.0861262937550878
+normal_lung,Fibroblasts,1670,42995,0.03884172578206768
+normal_lung,MAST cells,1079,42995,0.02509594138853355
+normal_lung,Myeloid cells,16672,42995,0.3877660193045703
+normal_lung,NK cells,6824,42995,0.15871612978253286
+normal_lung,T lymphocytes,11072,42995,0.2575183160832655
+normal_lymph_node,B lymphocytes,10584,37446,0.2826470116968435
+normal_lymph_node,Myeloid cells,1288,37446,0.03439619719062116
+normal_lymph_node,T lymphocytes,25319,37446,0.6761469849917214
+normal_lymph_node,Undetermined,255,37446,0.006809806120813972
+pleural_effusion,B lymphocytes,3285,20304,0.16179078014184398
+pleural_effusion,Epithelial cells,396,20304,0.01950354609929078
+pleural_effusion,Myeloid cells,3063,20304,0.15085697399527187
+pleural_effusion,NK cells,1297,20304,0.06387903861308117
+pleural_effusion,T lymphocytes,11974,20304,0.5897360126083531
+pleural_effusion,Undetermined,289,20304,0.01423364854215918
+primary_tumor,B lymphocytes,5312,45149,0.11765487607698952
+primary_tumor,Endothelial cells,655,45149,0.014507519546390839
+primary_tumor,Epithelial cells,7270,45149,0.1610223925225365
+primary_tumor,Fibroblasts,1718,45149,0.03805178409267093
+primary_tumor,MAST cells,1809,45149,0.040067332609803094
+primary_tumor,Myeloid cells,8794,45149,0.1947772929632993
+primary_tumor,NK cells,1004,45149,0.022237480342864737
+primary_tumor,T lymphocytes,18587,45149,0.4116813218454451

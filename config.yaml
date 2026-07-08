@@ -1,0 +1,19 @@
+accession: GSE131907
+geo_base_url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE131nnn/GSE131907/suppl
+files:
+  annotation: GSE131907_Lung_Cancer_cell_annotation.txt.gz
+  raw_umi_txt: GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz
+  normalized_log2tpm_txt: GSE131907_Lung_Cancer_normalized_log2TPM_matrix.txt.gz
+  feature_summary: GSE131907_Lung_Cancer_Feature_Summary.xlsx
+metadata:
+  sample_patterns:
+    normal_lung: "^LUNG_N"
+    primary_tumor: "^LUNG_T"
+    ebus_broncho_tumor: "^(EBUS|BRONCHO)"
+    normal_lymph_node: "^LN_"
+    pleural_effusion: "^EFFUSION"
+    non_smoker_lung: "^NS_"
+  marker_columns:
+    possible_sample: [sample, Sample, orig.ident, patient, Patient, tissue, Tissue]
+    possible_celltype: [cell_type, Cell_type, celltype, CellType, cell_type_major, major_cell_type, cluster, annotation]
+

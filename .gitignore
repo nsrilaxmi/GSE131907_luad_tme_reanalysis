@@ -1,0 +1,14 @@
+data/raw_geo/*
+data/processed/*
+data/metadata/*.csv
+results/figures/*.png
+results/figures/*.pdf
+results/tables/*.csv
+results/reports/*.html
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+

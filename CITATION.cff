@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Sample-Aware Reanalysis of Lung Adenocarcinoma Tumor Microenvironment scRNA-seq"
+message: "If you use this reanalysis workflow, please cite this repository and the original GSE131907 dataset/publication."
+type: software
+authors:
+  - family-names: "Nerella"
+    given-names: "Srilaxmi"
+repository-code: "https://github.com/nsrilaxmi/GSE131907_luad_tme_reanalysis"
+date-released: "2026-07-07"
+keywords:
+  - single-cell RNA-seq
+  - lung adenocarcinoma
+  - tumor microenvironment
+  - GEO
+  - Scanpy
+references:
+  - type: dataset
+    title: "GSE131907"
+    url: "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907"
+

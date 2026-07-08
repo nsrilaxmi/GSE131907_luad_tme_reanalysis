@@ -1,0 +1,63 @@
+---
+title: "GSE131907 LUAD Tumor Microenvironment Reanalysis"
+format:
+  html:
+    toc: true
+    code-fold: true
+execute:
+  warning: false
+  message: false
+---
+
+```{python}
+from pathlib import Path
+import pandas as pd
+from IPython.display import Markdown, display
+
+project = Path("..").resolve()
+docs = project / "docs"
+
+def show_png(path, caption):
+    p = docs / "figures" / path
+    if p.exists():
+        display(Markdown(f"![{caption}]({p.as_posix()})"))
+    else:
+        display(Markdown(f"*Missing figure: `{path}`*"))
+```
+
+## Overview
+
+This report summarizes a sample-aware reanalysis scaffold for `GSE131907`, focused on lung adenocarcinoma tumor microenvironment composition across tissue sites.
+
+## Sample Metadata
+
+```{python}
+path = docs / "tables" / "cell_counts_by_sample.csv"
+if path.exists():
+    display(pd.read_csv(path).head(20))
+else:
+    display(Markdown("*Run the analysis workflow to populate preview tables.*"))
+```
+
+## Composition Preview
+
+```{python}
+show_png("sample_counts_by_tissue.png", "Cell counts by sample and tissue")
+show_png("celltype_composition_by_sample.png", "Cell type composition by sample")
+show_png("top_celltypes_by_site.png", "Top cell types by tissue site")
+```
+
+## Planned TME Signatures
+
+```{python}
+path = docs / "tables" / "planned_tme_signatures.csv"
+if path.exists():
+    display(pd.read_csv(path))
+else:
+    display(Markdown("*Run `scripts/03_signature_plan.py` to populate signature definitions.*"))
+```
+
+## Limitations
+
+This first version is annotation-first. Expression-matrix signature scoring and pseudo-bulk differential expression should be added only after careful memory-aware parsing of the GEO expression matrices.
+
