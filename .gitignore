@@ -9,6 +9,6 @@ results/reports/*.html
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+.snakemake/
 .Rhistory
 .RData
-

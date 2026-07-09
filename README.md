@@ -134,6 +134,7 @@ docs/figures/
 ├── tme_signature_heatmap_by_site_celltype.png
 ├── signature_contrast_effect_sizes.png
 ├── paired_patient_signature_deltas.png
+├── signature_score_sensitivity.png
 ├── top_subtypes_by_tissue.png
 ├── tcell_subtype_signature_heatmap.png
 ├── myeloid_subtype_signature_heatmap.png
@@ -148,6 +149,8 @@ docs/tables/
 ├── signature_scores_by_sample_celltype.csv
 ├── signature_scores_by_tissue_celltype.csv
 ├── key_results_summary.csv
+├── signature_contrast_sensitivity.csv
+├── signature_score_method_correlations.csv
 ├── signature_site_contrasts.csv
 ├── paired_patient_signature_contrasts.csv
 ├── subtype_composition_by_sample.csv
@@ -204,6 +207,12 @@ Where the same patient contributes multiple tissue contexts, the workflow also c
 
 ![Paired patient TME signature contrasts](docs/figures/paired_patient_signature_deltas.png)
 
+### Signature Scoring Sensitivity
+
+The workflow also compares original mean log-normalized signature effects with standardized and rank-percentile versions of the same sample-level scores. This checks whether headline contrast directions are stable to score scaling.
+
+![Signature score sensitivity](docs/figures/signature_score_sensitivity.png)
+
 ### Cell-Subtype TME Patterns
 
 The subtype layer uses the original `Cell_subtype` annotations to summarize composition and signature scores for more specific immune and epithelial populations.
@@ -237,6 +246,8 @@ The first-pass signature sets include T-cell exhaustion, cytotoxicity, myeloid i
 `scripts/06_subtype_analysis.py` adds subtype-level composition and signature summaries from the GEO `Cell_subtype` labels. It filters sample-subtype summaries before tissue-level averaging to reduce instability from very small cell groups.
 
 `scripts/07_paired_patient_analysis.py` adds a paired-patient sensitivity layer for tissue contrasts where the same patient contributes both the reference and contrast tissue contexts.
+
+`scripts/10_signature_score_sensitivity.py` adds a lightweight scoring-sensitivity layer that compares original mean-score contrast directions with z-score and rank-percentile-scaled summaries.
 
 ## Limitations
 

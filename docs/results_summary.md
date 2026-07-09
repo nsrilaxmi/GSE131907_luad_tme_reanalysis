@@ -77,6 +77,7 @@ The subtype analysis is still descriptive, but it makes the repo scientifically 
 - Adds expression-based TME signature scoring without loading the full expression matrix into memory.
 - Adds sample-level signature contrasts with effect sizes and FDR correction.
 - Adds paired-patient sensitivity checks for tissue contrasts where matched patients are available.
+- Adds a scoring-sensitivity check showing that headline contrast directions are stable after z-score and rank-percentile scaling.
 - Adds subtype-aware composition and signature summaries from the original cell annotations.
 - Provides compact preview figures and tables suitable for GitHub review.
 

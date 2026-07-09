@@ -10,6 +10,7 @@ Major repository upgrade for the `GSE131907` LUAD tumor microenvironment reanaly
 - Sample-level tissue-site contrast testing with effect sizes and FDR correction.
 - Cell-subtype composition and signature summaries using GEO `Cell_subtype` labels.
 - Paired-patient sensitivity checks where matched tissue contexts exist.
+- Signature score-scaling sensitivity checks for headline contrast robustness.
 - New committed preview figures and tables under `docs/`.
 - Project brief, output guide, updated results summary, and expanded report scaffold.
 - Lightweight validation script for committed outputs, documentation, notebook structure, and report links.

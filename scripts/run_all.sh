@@ -27,4 +27,5 @@ if [[ "${1:-}" == "--with-expression" ]]; then
   "$PYTHON_BIN" scripts/06_subtype_analysis.py
   "$PYTHON_BIN" scripts/07_paired_patient_analysis.py
   "$PYTHON_BIN" scripts/09_key_results_summary.py
+  "$PYTHON_BIN" scripts/10_signature_score_sensitivity.py
 fi

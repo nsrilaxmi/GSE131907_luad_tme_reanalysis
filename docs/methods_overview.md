@@ -14,11 +14,13 @@ flowchart TD
     F --> G["05_signature_statistics.py"]
     F --> H["06_subtype_analysis.py"]
     F --> I["07_paired_patient_analysis.py"]
+    G --> L["10_signature_score_sensitivity.py"]
     D --> J["docs/figures and docs/tables"]
     E --> J
     G --> J
     H --> J
     I --> J
+    L --> J
     J --> K["08_validate_outputs.py"]
 ```
 
@@ -103,6 +105,12 @@ It reports:
 - paired patient IDs
 
 These checks are exploratory but help distinguish within-patient patterns from purely between-patient tissue-site comparisons.
+
+## Signature Score Sensitivity
+
+`scripts/10_signature_score_sensitivity.py` compares the original mean log-normalized signature scores with z-score and rank-percentile summaries at the sample/cell-type level.
+
+This is a lightweight robustness check. It does not introduce a new biological pathway model; it asks whether headline tissue-site contrast directions persist after score scaling.
 
 ## Output Validation
 

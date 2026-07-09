@@ -34,7 +34,7 @@ From the repository root:
 snakemake --snakefile workflow/Snakefile --cores 4 full
 ```
 
-This target also downloads the raw UMI matrix if needed and regenerates expression-based TME signatures, sample-level contrasts, subtype summaries, paired-patient checks, and the key-results table.
+This target also downloads the raw UMI matrix if needed and regenerates expression-based TME signatures, sample-level contrasts, subtype summaries, paired-patient checks, score-sensitivity summaries, and the key-results table.
 
 ## Dry Run
 

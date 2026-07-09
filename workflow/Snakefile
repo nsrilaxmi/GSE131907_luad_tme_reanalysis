@@ -16,7 +16,9 @@ rule all:
 rule full:
     input:
         "docs/tables/key_results_summary.csv",
+        "docs/tables/signature_contrast_sensitivity.csv",
         "docs/figures/signature_contrast_effect_sizes.png",
+        "docs/figures/signature_score_sensitivity.png",
         "docs/figures/paired_patient_signature_deltas.png",
         "docs/figures/top_subtypes_by_tissue.png",
 
@@ -126,3 +128,15 @@ rule key_results:
         "docs/tables/key_results_summary.csv",
     shell:
         "{PYTHON} scripts/09_key_results_summary.py"
+
+
+rule signature_score_sensitivity:
+    input:
+        "docs/tables/signature_scores_by_sample_celltype.csv",
+        "docs/tables/signature_site_contrasts.csv",
+    output:
+        "docs/tables/signature_contrast_sensitivity.csv",
+        "docs/tables/signature_score_method_correlations.csv",
+        "docs/figures/signature_score_sensitivity.png",
+    shell:
+        "{PYTHON} scripts/10_signature_score_sensitivity.py"

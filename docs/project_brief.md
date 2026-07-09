@@ -28,6 +28,7 @@ How do tumor microenvironment composition and selected expression programs vary 
 - Scored curated TME signatures after library-size normalization using mean log-normalized expression.
 - Tested selected sample-level tissue-site contrasts with Mann-Whitney U tests, Cohen's d, and Benjamini-Hochberg FDR correction.
 - Added paired-patient sensitivity checks where the same patient had both reference and contrast tissue contexts.
+- Added a score-scaling sensitivity check comparing original mean scores with z-score and rank-percentile summaries.
 - Generated compact GitHub-preview figures, tables, a companion notebook, and validation checks.
 
 ## Key First-Pass Findings
@@ -38,6 +39,7 @@ See `docs/tables/key_results_summary.csv` for a compact machine-readable summary
 - Primary tumor epithelial hypoxia is also higher than matched normal lung in the paired-patient sensitivity check with 10 paired patients.
 - Myeloid inflammation and macrophage-like signatures are higher in tumor-associated sites than normal lymph node in sample-level contrasts.
 - T-cell cytotoxicity and exhaustion programs are elevated in several tumor-associated contexts relative to normal lymph node.
+- Headline contrast directions remain stable after z-score and rank-percentile score scaling.
 - Subtype summaries show that broad immune and epithelial signals can be linked back to more interpretable annotated populations, including macrophage, T-cell, malignant epithelial, AT1/AT2, and tumor-state epithelial labels.
 
 ## Strongest Result to Mention
