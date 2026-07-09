@@ -14,6 +14,7 @@ Major repository upgrade for the `GSE131907` LUAD tumor microenvironment reanaly
 - Project brief, output guide, updated results summary, and expanded report scaffold.
 - Lightweight validation script for committed outputs, documentation, notebook structure, and report links.
 - GitHub Actions validation for Python syntax and committed output integrity.
+- Optional Snakemake workflow entry point under `workflow/`.
 
 ### Improved
 

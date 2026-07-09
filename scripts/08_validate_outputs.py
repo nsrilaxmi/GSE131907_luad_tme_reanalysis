@@ -77,6 +77,8 @@ REQUIRED_REPOSITORY_FILES = [
     "config.yaml",
     "data/README.md",
     "results/README.md",
+    "workflow/README.md",
+    "workflow/Snakefile",
 ]
 
 

@@ -31,7 +31,7 @@ MPLCONFIGDIR=/tmp/gse131907_mpl PYTHONPYCACHEPREFIX=/tmp/gse131907_pycache bash 
 ## Suggested Commit
 
 ```bash
-git add .github CHANGELOG.md CITATION.cff README.md data docs environment.yml notebooks reports requirements.txt results scripts
+git add .github CHANGELOG.md CITATION.cff README.md data docs environment.yml notebooks reports requirements.txt results scripts workflow
 git commit -m "Add subtype and paired-patient LUAD TME analyses"
 git push
 ```

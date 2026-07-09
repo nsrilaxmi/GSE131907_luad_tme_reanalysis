@@ -1,0 +1,128 @@
+PYTHON = config.get("python", "python3")
+
+
+rule all:
+    input:
+        "data/metadata/gse131907_cell_metadata_clean.csv",
+        "docs/tables/cell_counts_by_sample.csv",
+        "docs/tables/celltype_composition_by_sample.csv",
+        "docs/tables/tissue_site_summary.csv",
+        "docs/tables/planned_tme_signatures.csv",
+        "docs/figures/sample_counts_by_tissue.png",
+        "docs/figures/celltype_composition_by_sample.png",
+        "docs/figures/top_celltypes_by_site.png",
+
+
+rule full:
+    input:
+        "docs/tables/key_results_summary.csv",
+        "docs/figures/signature_contrast_effect_sizes.png",
+        "docs/figures/paired_patient_signature_deltas.png",
+        "docs/figures/top_subtypes_by_tissue.png",
+
+
+rule download_annotation:
+    output:
+        "data/raw_geo/GSE131907_Lung_Cancer_cell_annotation.txt.gz",
+    shell:
+        "{PYTHON} scripts/00_download_geo.py --annotation-only"
+
+
+rule download_raw_umi:
+    output:
+        "data/raw_geo/GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz",
+        "data/raw_geo/GSE131907_Lung_Cancer_Feature_Summary.xlsx",
+    shell:
+        "{PYTHON} scripts/00_download_geo.py --raw-only"
+
+
+rule metadata:
+    input:
+        "data/raw_geo/GSE131907_Lung_Cancer_cell_annotation.txt.gz",
+    output:
+        "data/metadata/gse131907_cell_metadata_clean.csv",
+    shell:
+        "{PYTHON} scripts/01_metadata_overview.py"
+
+
+rule composition:
+    input:
+        "data/metadata/gse131907_cell_metadata_clean.csv",
+    output:
+        "docs/tables/cell_counts_by_sample.csv",
+        "docs/tables/celltype_composition_by_sample.csv",
+        "docs/tables/tissue_site_summary.csv",
+        "docs/figures/sample_counts_by_tissue.png",
+        "docs/figures/celltype_composition_by_sample.png",
+        "docs/figures/top_celltypes_by_site.png",
+    shell:
+        "{PYTHON} scripts/02_composition_analysis.py"
+
+
+rule signature_plan:
+    output:
+        "docs/tables/planned_tme_signatures.csv",
+    shell:
+        "{PYTHON} scripts/03_signature_plan.py"
+
+
+rule signature_scoring:
+    input:
+        "data/metadata/gse131907_cell_metadata_clean.csv",
+        "data/raw_geo/GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz",
+    output:
+        "docs/tables/signature_genes_found.csv",
+        "docs/tables/signature_scores_by_sample_celltype.csv",
+        "docs/tables/signature_scores_by_tissue_celltype.csv",
+        "docs/figures/tcell_signature_scores_by_site.png",
+        "docs/figures/myeloid_signature_scores_by_site.png",
+        "docs/figures/epithelial_signature_scores_by_site.png",
+        "docs/figures/tme_signature_heatmap_by_site_celltype.png",
+    shell:
+        "{PYTHON} scripts/04_signature_scoring.py"
+
+
+rule signature_statistics:
+    input:
+        "docs/tables/signature_scores_by_sample_celltype.csv",
+    output:
+        "docs/tables/signature_site_contrasts.csv",
+        "docs/figures/signature_contrast_effect_sizes.png",
+    shell:
+        "{PYTHON} scripts/05_signature_statistics.py"
+
+
+rule subtype_analysis:
+    input:
+        "docs/tables/signature_scores_by_sample_celltype.csv",
+    output:
+        "docs/tables/subtype_composition_by_sample.csv",
+        "docs/tables/subtype_composition_by_tissue.csv",
+        "docs/tables/signature_scores_by_sample_subtype.csv",
+        "docs/tables/signature_scores_by_tissue_subtype.csv",
+        "docs/figures/top_subtypes_by_tissue.png",
+        "docs/figures/tcell_subtype_signature_heatmap.png",
+        "docs/figures/myeloid_subtype_signature_heatmap.png",
+        "docs/figures/epithelial_subtype_signature_heatmap.png",
+    shell:
+        "{PYTHON} scripts/06_subtype_analysis.py"
+
+
+rule paired_patient_analysis:
+    input:
+        "docs/tables/signature_scores_by_sample_celltype.csv",
+    output:
+        "docs/tables/paired_patient_signature_contrasts.csv",
+        "docs/figures/paired_patient_signature_deltas.png",
+    shell:
+        "{PYTHON} scripts/07_paired_patient_analysis.py"
+
+
+rule key_results:
+    input:
+        "docs/tables/signature_site_contrasts.csv",
+        "docs/tables/paired_patient_signature_contrasts.csv",
+    output:
+        "docs/tables/key_results_summary.csv",
+    shell:
+        "{PYTHON} scripts/09_key_results_summary.py"

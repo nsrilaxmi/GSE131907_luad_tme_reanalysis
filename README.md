@@ -110,6 +110,15 @@ Validate committed output files:
 python3 scripts/08_validate_outputs.py
 ```
 
+Optional Snakemake execution:
+
+```bash
+snakemake --snakefile workflow/Snakefile --cores 4
+snakemake --snakefile workflow/Snakefile --cores 4 full
+```
+
+The first command runs the lightweight metadata/composition target. The `full` target runs the expression-driven signature workflow. See [workflow/README.md](workflow/README.md) for details.
+
 The raw UMI matrix is large but feasible to stream. The workflow avoids loading the full expression matrix into memory: it computes per-cell library sizes, extracts only selected tumor microenvironment signature genes, and summarizes scores at sample/cell-type/tissue-site level. The normalized log2TPM matrix is much larger and is not required for this workflow.
 
 ## Current Outputs
